@@ -1,3 +1,5 @@
+package easy;
+
 /**
  * LeetCode Problem 66 - Plus One
  * <p>

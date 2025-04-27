@@ -1,4 +1,4 @@
-/**
+package easy; /**
  * LeetCode Problem 605: Can Place Flowers
  * <p>
  * Description:
@@ -18,7 +18,7 @@
  */
 public class CanPlaceFlowers {
 
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		// Example usage
 		int[] flowerbed = { 1, 0, 0, 0, 1 };
 		int n = 1;

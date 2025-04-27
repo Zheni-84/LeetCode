@@ -1,5 +1,8 @@
+package easy;
+
 /**
  * LeetCode Problem 125 - Valid Palindrome
+ *
  * Determine if a string is a palindrome, considering only alphanumeric characters and ignoring cases.
  * A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward
  * (ignoring spaces, punctuation, and capitalization).
