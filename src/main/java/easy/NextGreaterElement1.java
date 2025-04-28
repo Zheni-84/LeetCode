@@ -15,7 +15,7 @@ import java.util.*;
  * <p>
  * Link: https://leetcode.com/problems/next-greater-element-i/
  */
-public class NextGreaterElementI {
+public class NextGreaterElement1 {
 
 	//Could you find an O(nums1.length + nums2.length) solution?
 	//You may assume that nums1 and nums2 have no duplicates.
