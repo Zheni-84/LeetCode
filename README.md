@@ -21,19 +21,19 @@ This repository contains my solutions to LeetCode problems in Java.
 
 ### Easy Problems
 
-|   # |            Problem            |                  Topics                   |                           Solution                           |
-|----:|:-----------------------------:|:-----------------------------------------:|:------------------------------------------------------------:|
-|  66 |           Plus one            |                Array, Math                |         [Java Code](src/main/java/easy/PlusOne.java)         |
-| 125 |       Valid Palindrome        |           Two Pointers, String            |     [Java Code](src/main/java/easy/ValidPalindrome.java)     |
-| 136 |         Single Number         |         Arrays, Bit Manipulation          |      [Java Code](src/main/java/easy/SingleNumber.java)       |
-| 495 |        Teemo Attacking        |               Array, Greedy               |        [Java](src/main/java/easy/TeemoAttacking.java)        |
-| 496 |    Next Greater Element I     | Array, Hash Table, Stack, Monotonic Stack |   [Java Code](src/main/java/easy/NextGreaterElement1.java)   |
-| 506 |        Relative Ranks         |   Array, Sorting, Heap (Priority Queue)   |      [Java Code](src/main/java/easy/RelativeRanks.java)      |
-| 557 | Reverse Words in a String III |           String, Two Pointers            |   [Java](src/main/java/easy/ReverseWordsInAStringIII.java)   |
-| 661 |       Image Smoother          |               Array, Matrix               |      [Java Code](src/main/java/easy/ImageSmoother.java)      |
-| 605 |       Can Place Flowers       |               Array, Greedy               |     [Java Code](src/main/java/easy/CanPlaceFlowers.java)     |
-| 680 |      Valid Palindrome II      |       Two Pointers, String, Greedy        |    [Java Code](src/main/java/easy/ValidPalindrome2.java)     |
-| 680 |  Valid Palindrome II Streams  |   Two Pointers, String, Greedy, Streams   | [Java Code](src/main/java/easy/ValidPalindrome2Streams.java) |
+|   # |            Problem            |                  Topics                   |                           Solution                            |
+|----:|:-----------------------------:|:-----------------------------------------:|:-------------------------------------------------------------:|
+|  66 |           Plus one            |                Array, Math                |         [Java Code](src/main/java/easy/PlusOne.java)          |
+| 125 |       Valid Palindrome        |           Two Pointers, String            |     [Java Code](src/main/java/easy/ValidPalindrome.java)      |
+| 136 |         Single Number         |         Arrays, Bit Manipulation          |       [Java Code](src/main/java/easy/SingleNumber.java)       |
+| 495 |        Teemo Attacking        |               Array, Greedy               |        [Java Code](src/main/java/easy/TeemoAttacking.java)        |
+| 496 |    Next Greater Element I     | Array, Hash Table, Stack, Monotonic Stack |   [Java Code](src/main/java/easy/NextGreaterElement1.java)    |
+| 506 |        Relative Ranks         |   Array, Sorting, Heap (Priority Queue)   |      [Java Code](src/main/java/easy/RelativeRanks.java)       |
+| 557 | Reverse Words in a String III |           String, Two Pointers            | [Java Code](src/main/java/easy/ReverseWordsInAStringIII.java) |
+| 661 |       Image Smoother          |               Array, Matrix               |      [Java Code](src/main/java/easy/ImageSmoother.java)       |
+| 605 |       Can Place Flowers       |               Array, Greedy               |     [Java Code](src/main/java/easy/CanPlaceFlowers.java)      |
+| 680 |      Valid Palindrome II      |       Two Pointers, String, Greedy        |     [Java Code](src/main/java/easy/ValidPalindrome2.java)     |
+| 680 |  Valid Palindrome II Streams  |   Two Pointers, String, Greedy, Streams   | [Java Code](src/main/java/easy/ValidPalindrome2Streams.java)  |
 
 ---
 
