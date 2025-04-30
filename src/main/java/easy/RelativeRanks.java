@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 /**
  * LeetCode Problem 506 - Relative Ranks
+ * Topics: Array, Sorting, Heap (Priority Queue)
  * <p>
  * Description:
  * You are given an integer array score of size n, where score[i] is the score of the ith athlete.

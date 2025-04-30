@@ -2,7 +2,8 @@ package easy;
 
 /**
  * LeetCode Problem 495 - Teemo Attacking
- *
+ * Topics: Array, Greedy
+ * <p>
  * Description:
  * 	Teemo is attacking an enemy with a poison duration.
  * 	Given an array of integers representing the time series of Teemo's attacks,

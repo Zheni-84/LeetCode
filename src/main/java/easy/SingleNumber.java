@@ -2,7 +2,8 @@ package easy;
 
 /**
  * LeetCode Problem 136 - Single Number
- *
+ * Topics: Array, Bit Manipulation
+ * <p>
  * Description:
  * 	Given a non-empty array of integers nums, every element appears twice except for one.
  *  Find that single one.

@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * LeetCode Problem 496 - Next Greater Element I
+ * Topics: Array, Hash Table, Stack, Monotonic Stack
  * <p>
  * Description:
  * The next greater element of some element x in an array is the first greater
