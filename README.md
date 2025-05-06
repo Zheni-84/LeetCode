@@ -21,26 +21,29 @@ This repository contains my solutions to LeetCode problems in Java.
 
 ### Easy Problems
 
-|    # |                  Problem                  |                  Topics                   |                              Solution                              |
-|-----:|:-----------------------------------------:|:-----------------------------------------:|:------------------------------------------------------------------:|
-|   66 |                 Plus one                  |                Array, Math                |            [Java Code](src/main/java/easy/PlusOne.java)            |
-|  125 |             Valid Palindrome              |           Two Pointers, String            |        [Java Code](src/main/java/easy/ValidPalindrome.java)        |
-|  136 |               Single Number               |         Arrays, Bit Manipulation          |         [Java Code](src/main/java/easy/SingleNumber.java)          |
-|  414 |           Third Maximum Number            |         Arrays, Sorting, TreeSet          |         [Java Code](src/main/java/easy/ThirdMaximumNumber.java)          |
-|  495 |              Teemo Attacking              |               Array, Greedy               |        [Java Code](src/main/java/easy/TeemoAttacking.java)         |
-|  496 |          Next Greater Element I           | Array, Hash Table, Stack, Monotonic Stack |      [Java Code](src/main/java/easy/NextGreaterElement1.java)      |
-|  506 |              Relative Ranks               |   Array, Sorting, Heap (Priority Queue)   |         [Java Code](src/main/java/easy/RelativeRanks.java)         |
-|  557 |       Reverse Words in a String III       |           String, Two Pointers            |   [Java Code](src/main/java/easy/ReverseWordsInAStringIII.java)    |
-|  661 |              Image Smoother               |               Array, Matrix               |         [Java Code](src/main/java/easy/ImageSmoother.java)         |
-|  605 |             Can Place Flowers             |               Array, Greedy               |        [Java Code](src/main/java/easy/CanPlaceFlowers.java)        |
-|  674 | Longest Continuous Increasing Subsequence |                   Array                   | [Java Code](src/main/java/easy/LongestContinuousSubsequence.java)  |
-|  680 |            Valid Palindrome II            |       Two Pointers, String, Greedy        |       [Java Code](src/main/java/easy/ValidPalindrome2.java)        |
-|  680 |     Valid Palindrome II (**Streams**)     |   Two Pointers, String, Greedy, Streams   |    [Java Code](src/main/java/easy/ValidPalindrome2Streams.java)    |
-|  804 |          Unique Morse Code Words          |         Array, Hash Table, String         |     [Java Code](src/main/java/easy/UniqueMorseCodeWords.java)      |
-|  804 |   Unique Morse Code Words (**Streams**)   |    Array, Hash Table, String, Streams     |  [Java Code](src/main/java/easy/UniqueMorseCodeWordsStreams.java)  |
-|  819 |             Most Common Word              |       String, Hash Table, Counting        |        [Java Code](src/main/java/easy/MostCommonWord.java)         |
-|  941 |           Valid Mountain Array            |            Array, Two Pointers            |      [Java Code](src/main/java/easy/ValidMountainArray.java)       |
-| 1295 |  Find Numbers with Even Number of Digits  |            Array, Math, Streams           |      [Java Code](src/main/java/easy/NumbersWithEvenNumberOfDigits.java)       |
+|    # |                           Problem                            |                  Topics            |                              Solution                              |
+|-----:|:------------------------------------------------------------:|:----------------------------------:|:------------------------------------------------------------------:|
+|   66 |                           Plus one                           |                Array, Math         |            [Java Code](src/main/java/easy/PlusOne.java)            |
+|  125 |                       Valid Palindrome                       |           Two Pointers, String     |        [Java Code](src/main/java/easy/ValidPalindrome.java)        |
+|  136 |                        Single Number                         |         Arrays, Bit Manipulation   |         [Java Code](src/main/java/easy/SingleNumber.java)          |
+|  414 |                     Third Maximum Number                     |         Arrays, Sorting, TreeSet   |      [Java Code](src/main/java/easy/ThirdMaximumNumber.java)       |
+|  495 |                       Teemo Attacking                        |               Array, Greedy        |        [Java Code](src/main/java/easy/TeemoAttacking.java)         |
+|  496 |                    Next Greater Element I                    | Array, Hash Table, Stack, Monotonic Stack |      [Java Code](src/main/java/easy/NextGreaterElement1.java)      |
+|  506 |                        Relative Ranks                        |   Array, Sorting, Heap (Priority Queue) |         [Java Code](src/main/java/easy/RelativeRanks.java)         |
+|  557 |                Reverse Words in a String III                 |           String, Two Pointers     |   [Java Code](src/main/java/easy/ReverseWordsInAStringIII.java)    |
+|  661 |                        Image Smoother                        |               Array, Matrix        |         [Java Code](src/main/java/easy/ImageSmoother.java)         |
+|  605 |                      Can Place Flowers                       |               Array, Greedy        |        [Java Code](src/main/java/easy/CanPlaceFlowers.java)        |
+|  674 |          Longest Continuous Increasing Subsequence           |                   Array            | [Java Code](src/main/java/easy/LongestContinuousSubsequence.java)  |
+|  680 |                     Valid Palindrome II                      |       Two Pointers, String, Greedy |       [Java Code](src/main/java/easy/ValidPalindrome2.java)        |
+|  680 |              Valid Palindrome II (**Streams**)               |   Two Pointers, String, Greedy, Streams |    [Java Code](src/main/java/easy/ValidPalindrome2Streams.java)    |
+|  804 |                   Unique Morse Code Words                    |         Array, Hash Table, String  |     [Java Code](src/main/java/easy/UniqueMorseCodeWords.java)      |
+|  804 |            Unique Morse Code Words (**Streams**)             |    Array, Hash Table, String, Streams |  [Java Code](src/main/java/easy/UniqueMorseCodeWordsStreams.java)  |
+|  819 |                       Most Common Word                       |       String, Hash Table, Counting |        [Java Code](src/main/java/easy/MostCommonWord.java)         |
+|  941 |                     Valid Mountain Array                     |            Array, Two Pointers     |      [Java Code](src/main/java/easy/ValidMountainArray.java)       |
+|  976 |                  Largest Perimeter Triangle                  |              Array, Sorting        |   [Java Code](src/main/java/easy/LargestPerimeterTriangle.java)    |
+| 1050 |                        Height Checker                        |              Array, Sorting        |         [Java Code](src/main/java/easy/HeightChecker.java)         |
+| 1295 |           Find Numbers with Even Number of Digits            |           Array, Math, Streams     | [Java Code](src/main/java/easy/NumbersWithEvenNumberOfDigits.java) |
+| 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting        | [Java Code](src/main/java/easy/AverageSalaryExcludingMinimumMaximum.java) ||      |                                                              |                                    |                                                                    |
 
 ---
 
