@@ -55,16 +55,20 @@ public class IsSubsequenceOptimized {
 		private static boolean isSubsequence(String s) {
 			int prevIndex = -1;
 
+			// Iterate over each character in s and find the next greater index in t
 			for (char c : s.toCharArray()) {
 				if (!indexMap.containsKey(c)) {
 					return false;
 				}
 
+				// Find the next greater index in t for the current character
 				List<Integer> positions = indexMap.get(c);
 				int nextIndex = nextGreater(positions, prevIndex);
+				// If no such index exists, return false
 				if (nextIndex == -1) {
 					return false;
 				}
+
 
 				prevIndex = nextIndex;
 			}
