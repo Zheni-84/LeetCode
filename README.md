@@ -26,7 +26,8 @@ This repository contains my solutions to LeetCode problems in Java.
 |   66 |                           Plus one                           |                Array, Math                |                 [Java Code](src/main/java/easy/PlusOne.java)                 |
 |  125 |                       Valid Palindrome                       |           Two Pointers, String            |             [Java Code](src/main/java/easy/ValidPalindrome.java)             |
 |  136 |                        Single Number                         |         Arrays, Bit Manipulation          |              [Java Code](src/main/java/easy/SingleNumber.java)               |
-|  392 |                        Is Subsequence                        |           Two Pointers, String            |           [Java Code](src/main/java/easy/IsSubsequence.java)            |
+|  392 |                        Is Subsequence                        |           Two Pointers, String            |              [Java Code](src/main/java/easy/IsSubsequence.java)              |
+|  392 |                  Is Subsequence (Optimized)                  |           String, Binary Search           |         [Java Code](src/main/java/easy/IsSubsequenceOptimized.java)          |
 |  414 |                     Third Maximum Number                     |         Arrays, Sorting, TreeSet          |           [Java Code](src/main/java/easy/ThirdMaximumNumber.java)            |
 |  495 |                       Teemo Attacking                        |               Array, Greedy               |             [Java Code](src/main/java/easy/TeemoAttacking.java)              |
 |  496 |                    Next Greater Element I                    | Array, Hash Table, Stack, Monotonic Stack |           [Java Code](src/main/java/easy/NextGreaterElement1.java)           |
@@ -45,7 +46,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1050 |                        Height Checker                        |              Array, Sorting               |              [Java Code](src/main/java/easy/HeightChecker.java)              |
 | 1295 |           Find Numbers with Even Number of Digits            |           Array, Math, Streams            |      [Java Code](src/main/java/easy/NumbersWithEvenNumberOfDigits.java)      |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting               |  [Java Code](src/main/java/easy/AverageSalaryExcludingMinimumMaximum.java)   |
-| 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |            [Java Code](src/main/java/easy/BuyTwoChocolates.java)             |
+| 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |      [Java Code](src/main/java/easy/BuyTwoChocolates.java)                   |
 | 1913 |         Maximum Product Difference Between Two Pairs         |              Array, Sorting               | [Java Code](src/main/java/easy/MaximumProductDifferenceBetweenTwoPairs.java) |
 | 1920 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |     [Java Code](src/main/java/easy/MinimumNumberMovesSeatEveryone.java)      |
 
