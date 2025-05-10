@@ -91,11 +91,16 @@ public class IsSubsequenceOptimized {
 			int result = -1;
 
 			while (left <= right) {
+				// Find the middle index
 				int mid = left + (right - left) / 2;
+				// Check if the current index is greater than prevIndex
 				if (list.get(mid) > prevIndex) {
+					// Found a candidate index that is greater than prevIndex.
+					// Update result and continue searching in the left half for the smallest such index.
 					result = list.get(mid);
 					right = mid - 1;
 				} else {
+					// Current mid index is not valid; search in the right half.
 					left = mid + 1;
 				}
 			}
