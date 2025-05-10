@@ -26,6 +26,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |   66 |                           Plus one                           |                Array, Math                |                 [Java Code](src/main/java/easy/PlusOne.java)                 |
 |  125 |                       Valid Palindrome                       |           Two Pointers, String            |             [Java Code](src/main/java/easy/ValidPalindrome.java)             |
 |  136 |                        Single Number                         |         Arrays, Bit Manipulation          |              [Java Code](src/main/java/easy/SingleNumber.java)               |
+|  392 |                        Is Subsequence                        |           Two Pointers, String            |           [Java Code](src/main/java/easy/IsSubsequence.java)            |
 |  414 |                     Third Maximum Number                     |         Arrays, Sorting, TreeSet          |           [Java Code](src/main/java/easy/ThirdMaximumNumber.java)            |
 |  495 |                       Teemo Attacking                        |               Array, Greedy               |             [Java Code](src/main/java/easy/TeemoAttacking.java)              |
 |  496 |                    Next Greater Element I                    | Array, Hash Table, Stack, Monotonic Stack |           [Java Code](src/main/java/easy/NextGreaterElement1.java)           |
@@ -35,7 +36,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  605 |                      Can Place Flowers                       |               Array, Greedy               |             [Java Code](src/main/java/easy/CanPlaceFlowers.java)             |
 |  674 |          Longest Continuous Increasing Subsequence           |                   Array                   |      [Java Code](src/main/java/easy/LongestContinuousSubsequence.java)       |
 |  680 |                     Valid Palindrome II                      |       Two Pointers, String, Greedy        |            [Java Code](src/main/java/easy/ValidPalindrome2.java)             |
-|  680 |              Valid Palindrome II (**Streams**)               |  Two Pointers, String, Greedy, Streams    |         [Java Code](src/main/java/easy/ValidPalindrome2Streams.java)         |
+|  680 |              Valid Palindrome II (**Streams**)               |   Two Pointers, String, Greedy, Streams   |         [Java Code](src/main/java/easy/ValidPalindrome2Streams.java)         |
 |  804 |                   Unique Morse Code Words                    |         Array, Hash Table, String         |          [Java Code](src/main/java/easy/UniqueMorseCodeWords.java)           |
 |  804 |            Unique Morse Code Words (**Streams**)             |    Array, Hash Table, String, Streams     |       [Java Code](src/main/java/easy/UniqueMorseCodeWordsStreams.java)       |
 |  819 |                       Most Common Word                       |       String, Hash Table, Counting        |             [Java Code](src/main/java/easy/MostCommonWord.java)              |
@@ -46,7 +47,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting               |  [Java Code](src/main/java/easy/AverageSalaryExcludingMinimumMaximum.java)   |
 | 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |            [Java Code](src/main/java/easy/BuyTwoChocolates.java)             |
 | 1913 |         Maximum Product Difference Between Two Pairs         |              Array, Sorting               | [Java Code](src/main/java/easy/MaximumProductDifferenceBetweenTwoPairs.java) |
-| 1920 |          Minimum Number of Moves to Seat Everyone            |              Array, Sorting               |     [Java Code](src/main/java/easy/MinimumNumberMovesSeatEveryone.java)      |
+| 1920 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |     [Java Code](src/main/java/easy/MinimumNumberMovesSeatEveryone.java)      |
 
 ---
 
