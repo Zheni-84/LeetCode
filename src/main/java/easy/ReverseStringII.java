@@ -10,45 +10,47 @@ package easy;
  * Given a string s and an integer k, reverse the first k characters for every 2k characters counting from the start of the string.
  **/
 public class ReverseStringII {
-/*Takeaway:
-    - Use StringBuilder for larger k => meaning fewer reversals — cleaner and often faster.
-    - Use char[] for small k => meaning frequent reversals — much more memory- and CPU-efficient.
- */
+
+	/*Takeaway:
+		- Use StringBuilder for larger k => meaning fewer reversals — cleaner and often faster.
+		- Use char[] for small k => meaning frequent reversals — much more memory- and CPU-efficient.
+	 */
 	public static void main(String[] args) {
-		StringBuilder input = new StringBuilder();
-		for (int i = 0; i < 1_000_000; i++) { // change this for bigger/smaller input
-			input.append((char) ('a' + (i % 26)));
+		int[] ks = { 1, 20, 100, 1000, 5000 };
+		int[] lengths = { 10_000, 100_000, 1_000_000 };
+
+		for (int len : lengths) {
+			String input = generateInput(len);
+			for (int k : ks) {
+				long start = System.nanoTime();
+				reverseStr(input, k);
+				long end = System.nanoTime();
+				double duration = (end - start) / 1_000_000.0;
+				System.out.printf("k = %-5d | Length = %-8d | Time = %.4f ms%n", k, len, duration);
+			}
+			System.out.println("-".repeat(50));
 		}
-		String s = input.toString();
-		int k = 1000;// change this to see benchmarks with more/fewer reversals
+	}
 
-		// Measure the performance of the StringBuilder-based implementation
-		// Start the timer
-		long start1 = System.nanoTime();
-		reverseStrBuilder(s, k); // Execute the reverseStrBuilder method
-		// End the timer
-		long end1 = System.nanoTime();
-		// Output the elapsed time in milliseconds
-		System.out.println("StringBuilder: " + (end1 - start1) / 1_000_000.0 + " ms");
-
-		// Measure the performance of the char[]-based implementation
-		// Start the timer
-		long start2 = System.nanoTime();
-		reverseStrArray(s, k); // Execute the reverseStrArray method
-		// End the timer
-		long end2 = System.nanoTime();
-		// Output the elapsed time in milliseconds
-		System.out.println("char[]: " + (end2 - start2) / 1_000_000.0 + " ms");
+	private static String generateInput(int len) {
+		return "abcdefghijklmnopqrstuvwxyz".repeat((len / 26) + 1).substring(0, len);
 	}
 
 	//Auto-Choosing Utility method
 	public static String reverseStr(String s, int k) {
+		boolean useCharArray = shouldUseCharArray(s.length(), k);
+		logStrategy(useCharArray);
+		return useCharArray ? reverseStrArray(s, k) : reverseStrBuilder(s, k);
+	}
+
+	private static boolean shouldUseCharArray(int length, int k) {
 		// Heuristic: prefer char[] if many small reversals
-		if (k <= 20) {
-			return reverseStrArray(s, k);
-		} else {
-			return reverseStrBuilder(s, k);
-		}
+		return k <= 20;
+	}
+
+	private static void logStrategy(boolean usedCharArray) {
+		String strategy = usedCharArray ? "char[]" : "StringBuilder";
+		System.out.printf("Using strategy: %-13s | ", strategy);
 	}
 
 	private static String reverseStrBuilder(String s, int k) {
