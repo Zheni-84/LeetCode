@@ -38,6 +38,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  541 |                      Reverse String II                       |                  String                   |             [Java Code](src/main/java/easy/done/ReverseStringII.java)             |
 |  557 |                Reverse Words in a String III                 |           String, Two Pointers            |        [Java Code](src/main/java/easy/done/ReverseWordsInAStringIII.java)         |
 |  557 |         Reverse Words in a String III (**Streams**)          |       String, Stream, StringBuilder       |     [Java Code](src/main/java/easy/done/ReverseWordsInAStringIIIStream.java)      |
+|  594 |                Longest Harmonious Subsequence                |             Array, Hash Table             |     [Java Code](src/main/java/easy/done/LongestHarmoniousSubsequence.java)      |
 |  661 |                        Image Smoother                        |               Array, Matrix               |              [Java Code](src/main/java/easy/done/ImageSmoother.java)              |
 |  605 |                      Can Place Flowers                       |               Array, Greedy               |             [Java Code](src/main/java/easy/done/CanPlaceFlowers.java)             |
 |  674 |          Longest Continuous Increasing Subsequence           |                   Array                   |      [Java Code](src/main/java/easy/done/LongestContinuousSubsequence.java)       |
