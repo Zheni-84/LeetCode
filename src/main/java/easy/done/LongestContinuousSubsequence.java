@@ -1,4 +1,4 @@
-package easy;
+package easy.done;
 
 /**
  * LeetCode Problem 674 - Longest Continuous Increasing Subsequence

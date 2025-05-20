@@ -1,4 +1,4 @@
-package easy;
+package easy.done;
 /**
  * 661. Image Smoother
  *

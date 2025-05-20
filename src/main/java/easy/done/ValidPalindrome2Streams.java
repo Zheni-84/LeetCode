@@ -1,4 +1,4 @@
-package easy;
+package easy.done;
 
 import java.util.stream.IntStream;
 

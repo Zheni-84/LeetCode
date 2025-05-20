@@ -1,4 +1,4 @@
-package easy; /**
+package easy.done; /**
  * LeetCode Problem 605: Can Place Flowers
  * <p>
  * Description:
