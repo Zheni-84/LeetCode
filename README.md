@@ -38,10 +38,10 @@ This repository contains my solutions to LeetCode problems in Java.
 |  541 |                      Reverse String II                       |                  String                   |             [Java Code](src/main/java/easy/done/ReverseStringII.java)             |
 |  557 |                Reverse Words in a String III                 |           String, Two Pointers            |        [Java Code](src/main/java/easy/done/ReverseWordsInAStringIII.java)         |
 |  557 |         Reverse Words in a String III (**Streams**)          |       String, Stream, StringBuilder       |     [Java Code](src/main/java/easy/done/ReverseWordsInAStringIIIStream.java)      |
-|  594 |                Longest Harmonious Subsequence                |             Array, Hash Table             |     [Java Code](src/main/java/easy/done/LongestHarmoniousSubsequence.java)      |
+|  594 |                Longest Harmonious Subsequence                |             Array, Hash Table             |      [Java Code](src/main/java/easy/done/LongestHarmoniousSubsequence.java)       |
 |  661 |                        Image Smoother                        |               Array, Matrix               |              [Java Code](src/main/java/easy/done/ImageSmoother.java)              |
 |  605 |                      Can Place Flowers                       |               Array, Greedy               |             [Java Code](src/main/java/easy/done/CanPlaceFlowers.java)             |
-|  643 |                  Maximum Average Subarray I                  |           Array, Sliding Window           |             [Java Code](src/main/java/easy/done/MaximumAverageSubarrayI.java)             |
+|  643 |                  Maximum Average Subarray I                  |           Array, Sliding Window           |         [Java Code](src/main/java/easy/done/MaximumAverageSubarrayI.java)         |
 |  674 |          Longest Continuous Increasing Subsequence           |                   Array                   |      [Java Code](src/main/java/easy/done/LongestContinuousSubsequence.java)       |
 |  680 |                     Valid Palindrome II                      |       Two Pointers, String, Greedy        |            [Java Code](src/main/java/easy/done/ValidPalindrome2.java)             |
 |  680 |              Valid Palindrome II (**Streams**)               |   Two Pointers, String, Greedy, Streams   |         [Java Code](src/main/java/easy/done/ValidPalindrome2Streams.java)         |
@@ -54,9 +54,11 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1295 |           Find Numbers with Even Number of Digits            |              String, Ponters              |         [Java Code](src/main/java/easy/done/MergeStringsAlternately.java)         |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting               |  [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)   |
 | 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |            [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)             |
+| 1652 |                       Defuse the Bomb                        |                   Array                   |              [Java Code](src/main/java/easy/done/DefuseTheBomb.java)              |
 | 1768 |                  Merge Strings Alternately                   |              Array, Sorting               |            [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)             |
 | 1913 |         Maximum Product Difference Between Two Pairs         |              Array, Sorting               | [Java Code](src/main/java/easy/done/MaximumProductDifferenceBetweenTwoPairs.java) |
 | 1920 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |     [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)      |
+| 2395 |                  Find K-Beauty of a Number                   |               String, Math                |           [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)           |
 
 ---
 
