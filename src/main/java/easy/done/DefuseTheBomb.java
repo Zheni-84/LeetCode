@@ -18,6 +18,7 @@ import java.util.Arrays;
  * Example:
  * Input: code = [5,7,1,4], k = 3
  * Output: [12,10,16,13]
+ * LeetCode Link: https://leetcode.com/problems/defuse-the-bomb/
  */
 public class DefuseTheBomb {
 	public static void main(String[] args) {

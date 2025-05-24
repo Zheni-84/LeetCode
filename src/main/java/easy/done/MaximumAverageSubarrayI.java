@@ -12,6 +12,7 @@ package easy.done;
  * Example:
  * Input: nums = [1,12,-5,-6,50,3], k = 4
  * Output: 12.75000
+ * LeetCode Link: https://leetcode.com/problems/maximum-average-subarray-i/
  */
 public class MaximumAverageSubarrayI {
 

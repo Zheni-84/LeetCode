@@ -23,6 +23,7 @@ import java.util.Set;
  * Space complexity: O(n), where n is the number of unique Morse code representations.
  * <p>
  * Return the number of different transformations among all words we have.
+ * LeetCode Link: https://leetcode.com/problems/unique-morse-code-words/
  */
 public class UniqueMorseCodeWords {
 

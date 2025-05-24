@@ -30,7 +30,7 @@ package easy.done;
  * Output: false
  *   Example 6:
  * Input: arr = [1,2,3,4,5,6,7,8,9,8]
- * 
+ * <p>
  * Link: https://leetcode.com/problems/valid-mountain-array/
  */
 public class ValidMountainArray {

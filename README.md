@@ -59,8 +59,8 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1768 |                  Merge Strings Alternately                   |              Array, Sorting               |            [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)             |
 | 1876 |      Substrings of Size Three with Distinct Characters       |     String, Sliding Window, Hash Set      |  [Java Code](src/main/java/easy/done/SubstringsSizeThreeDistinctCharacters.java)  |
 | 1913 |         Maximum Product Difference Between Two Pairs         |              Array, Sorting               | [Java Code](src/main/java/easy/done/MaximumProductDifferenceBetweenTwoPairs.java) |
-| 1920 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |     [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)      |
-| 2395 |                  Find K-Beauty of a Number                   |               String, Math                |           [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)           |
+| 2037 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |     [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)      |
+| 2269 |                  Find K-Beauty of a Number                   |               String, Math                |           [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)           |
 
 ---
 

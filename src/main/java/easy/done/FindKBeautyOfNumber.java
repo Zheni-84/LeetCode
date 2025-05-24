@@ -1,7 +1,7 @@
 package easy.done;
 
 /**
- * LeetCode Problem 2395 - Find K-Beauty of a Number
+ * LeetCode Problem 2269 - Find K-Beauty of a number
  * Topics: String, Math
  * Time Complexity: O(n), where n is the length of the number.
  * Space Complexity: O(1), since we are using a constant amount of space.
@@ -15,6 +15,7 @@ package easy.done;
  * Example:
  * Input: num = 240, k = 2
  * Output: 2
+ * LeetCode Link: https://leetcode.com/problems/find-the-k-beauty-of-a-number/
  */
 public class FindKBeautyOfNumber {
 

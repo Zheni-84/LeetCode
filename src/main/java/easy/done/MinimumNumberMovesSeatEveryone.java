@@ -3,7 +3,7 @@ package easy.done;
 import java.util.Arrays;
 
 /**
- * LeetCode Problem 1920 - Minimum Number of Moves to Seat Everyone
+ * LeetCode Problem 2037 - Minimum Number of Moves to Seat Everyone
  * Topics: Array, Sorting
  * Time Complexity: O(n log n) - for sorting the arrays, where n is the length of the input arrays.
  * Space Complexity: O(1) - in-place sorting.

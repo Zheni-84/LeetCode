@@ -13,6 +13,7 @@ import java.util.Arrays;
  * return the maximum number of children you can satisfy.
  * Each child can only be satisfied if their greed factor is less than or equal to the size of the cookie.
  * Each cookie can be assigned to only one child.
+ * LeetCode Link: https://leetcode.com/problems/assign-cookies/
  */
 public class AssignCookies {
 
