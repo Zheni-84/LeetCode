@@ -55,8 +55,9 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting               |  [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)   |
 | 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |            [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)             |
 | 1652 |                       Defuse the Bomb                        |                   Array                   |              [Java Code](src/main/java/easy/done/DefuseTheBomb.java)              |
-| 1763 |                    Longest Nice Substring                    |            String, Brute Force            |              [Java Code](src/main/java/easy/done/LongestNiceSubstring.java)              |
+| 1763 |                    Longest Nice Substring                    |            String, Brute Force            |          [Java Code](src/main/java/easy/done/LongestNiceSubstring.java)           |
 | 1768 |                  Merge Strings Alternately                   |              Array, Sorting               |            [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)             |
+| 1876 |      Substrings of Size Three with Distinct Characters       |     String, Sliding Window, Hash Set      |  [Java Code](src/main/java/easy/done/SubstringsSizeThreeDistinctCharacters.java)  |
 | 1913 |         Maximum Product Difference Between Two Pairs         |              Array, Sorting               | [Java Code](src/main/java/easy/done/MaximumProductDifferenceBetweenTwoPairs.java) |
 | 1920 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |     [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)      |
 | 2395 |                  Find K-Beauty of a Number                   |               String, Math                |           [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)           |
