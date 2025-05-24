@@ -19,10 +19,55 @@ public class LongestNiceSubstring {
 
 	public static void main(String[] args) {
 		String s = "Bb";
-		System.out.println(longestNiceSubstring(s));
+		System.out.println("Brute force O(n^3): " + longestNiceSubstringBruteForce(s));
+		System.out.println("Divide&Conquer: " + longestNiceSubstringDC(s));
 	}
 
-	private static String longestNiceSubstring(String s) {
+	/**
+	 * Function to find the longest nice substring using Devide and Conquer.
+	 *
+	 * @param s The input string.
+	 * @return The longest nice substring.
+	 */
+	private static String longestNiceSubstringDC(String s) {
+		return divideAndConquer(s, 0, s.length());
+	}
+
+	private static String divideAndConquer(String s, int start, int end) {
+		if(end - start < 2) {
+			return "";
+		}
+
+		Set<Character> set = s.substring(start, end)
+				// Convert to IntStream and then to Set<Character>
+				// This will ensure we have both cases of each character
+				.chars()
+				.mapToObj(c -> (char) c)
+				.collect(Collectors.toSet());
+
+		for (int i = start; i < end; i++) {
+			char c = s.charAt(i);
+			if (set.contains(Character.toLowerCase(c)) && set.contains(Character.toUpperCase(c))) {
+				continue; // still nice so far
+			}
+
+			// Found a bad char — split around it
+			String left = divideAndConquer(s, start, i);
+			String right = divideAndConquer(s, i + 1, end);
+			return left.length() >= right.length() ? left : right;
+		}
+
+		// If we never split, the whole substring is nice
+		return s.substring(start, end);
+	}
+
+	/**
+	 * Function to find the longest nice substring using Brute Force.
+	 *
+	 * @param s The input string.
+	 * @return The longest nice substring.
+	 */
+	private static String longestNiceSubstringBruteForce(String s) {
 		int maxLen = 0;
 		String result = "";
 
