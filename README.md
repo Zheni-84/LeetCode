@@ -62,6 +62,8 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1984 |  Minimum Difference Between Highest and Lowest of K Scores   |      Array, Sorting, Sliding window       |[Java Code](src/main/java/easy/done/MinimumDifferenceBetweenHighestLowestKScores.java) |
 | 2037 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |       [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)        |
 | 2269 |                  Find K-Beauty of a Number                   |               String, Math                |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)             |
+| 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |          String, Sliding Window           |             [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)             |
+| 2760 |           Longest Even Odd Subarray with Threshold           |           Array, Sliding Window           |             [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)             |
 
 ---
 
