@@ -52,6 +52,8 @@ This repository contains my solutions to LeetCode problems in Java.
 |  976 |                  Largest Perimeter Triangle                  |              Array, Sorting               |          [Java Code](src/main/java/easy/done/LargestPerimeterTriangle.java)           |
 | 1050 |                        Height Checker                        |              Array, Sorting               |                [Java Code](src/main/java/easy/done/HeightChecker.java)                |
 | 1295 |           Find Numbers with Even Number of Digits            |              String, Ponters              |           [Java Code](src/main/java/easy/done/MergeStringsAlternately.java)           |
+| 1413 |        Minimum Value to Get Positive Step by Step Sum        |             Array, Prefix Sum             |           [Java Code](src/main/java/easy/done/MinimumValueToPositiveStepSum.java)           |
+| 1422 |            Maximum Score After Splitting a String            |            String, Prefix Sum             |           [Java Code](src/main/java/easy/done/MaximumScoreAfterSplittingString.java)           |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting               |    [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)     |
 | 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |              [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)               |
 | 1652 |                       Defuse the Bomb                        |                   Array                   |                [Java Code](src/main/java/easy/done/DefuseTheBomb.java)                |
