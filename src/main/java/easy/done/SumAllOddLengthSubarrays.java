@@ -4,7 +4,8 @@ package easy.done;
  * LeetCode 1588: Sum of All Odd Length Subarrays
  * Topics: Array, Prefix Sum
  * <p>
- * Time Complexity: O(n^2), where n is the length of the array.
+ * Time Complexity Brute: O(n^3), where n is the length of the array.
+ * Time Complexity Optimal: O(n), where n is the length of the array.
  * Space Complexity: O(1)
  * <p>
  * This class provides two methods to calculate the sum of all odd-length subarrays.
