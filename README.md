@@ -47,6 +47,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  680 |                     Valid Palindrome II                      |       Two Pointers, String, Greedy        |               [Java Code](src/main/java/easy/done/ValidPalindrome2.java)               |
 |  680 |              Valid Palindrome II (**Streams**)               |   Two Pointers, String, Greedy, Streams   |           [Java Code](src/main/java/easy/done/ValidPalindrome2Streams.java)            |
 |  733 |                          Flood Fill                          |          Array, DFS, BFS, Matrix          |                  [Java Code](src/main/java/easy/done/FloodFill.java)                   |
+|  766 |                       Toeplitz Matrix                        |               Array, Matrix               |                  [Java Code](src/main/java/easy/done/ToeplitzMatrix.java)                   |
 |  804 |                   Unique Morse Code Words                    |         Array, Hash Table, String         |             [Java Code](src/main/java/easy/done/UniqueMorseCodeWords.java)             |
 |  804 |            Unique Morse Code Words (**Streams**)             |    Array, Hash Table, String, Streams     |         [Java Code](src/main/java/easy/done/UniqueMorseCodeWordsStreams.java)          |
 |  819 |                       Most Common Word                       |       String, Hash Table, Counting        |                [Java Code](src/main/java/easy/done/MostCommonWord.java)                |
