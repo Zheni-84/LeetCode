@@ -32,7 +32,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  392 |                  Is Subsequence (Optimized)                  |           String, Binary Search           |            [Java Code](src/main/java/easy/done/IsSubsequenceOptimized.java)            |
 |  414 |                     Third Maximum Number                     |         Arrays, Sorting, TreeSet          |              [Java Code](src/main/java/easy/done/ThirdMaximumNumber.java)              |
 |  455 |                        Assign Cookies                        |          Array, Sorting, Greedy           |                [Java Code](src/main/java/easy/done/AssignCookies.java)                 |
-|  463 |                        Assign Cookies                        |          Array, DFS, BFS, Matrix          |                [Java Code](src/main/java/easy/done/IslandPerimeter.java)                 |
+|  463 |                        Assign Cookies                        |          Array, DFS, BFS, Matrix          |               [Java Code](src/main/java/easy/done/IslandPerimeter.java)                |
 |  495 |                       Teemo Attacking                        |               Array, Greedy               |                [Java Code](src/main/java/easy/done/TeemoAttacking.java)                |
 |  496 |                    Next Greater Element I                    | Array, Hash Table, Stack, Monotonic Stack |             [Java Code](src/main/java/easy/done/NextGreaterElement1.java)              |
 |  506 |                        Relative Ranks                        |   Array, Sorting, Heap (Priority Queue)   |                [Java Code](src/main/java/easy/done/RelativeRanks.java)                 |
@@ -47,19 +47,22 @@ This repository contains my solutions to LeetCode problems in Java.
 |  680 |                     Valid Palindrome II                      |       Two Pointers, String, Greedy        |               [Java Code](src/main/java/easy/done/ValidPalindrome2.java)               |
 |  680 |              Valid Palindrome II (**Streams**)               |   Two Pointers, String, Greedy, Streams   |           [Java Code](src/main/java/easy/done/ValidPalindrome2Streams.java)            |
 |  733 |                          Flood Fill                          |          Array, DFS, BFS, Matrix          |                  [Java Code](src/main/java/easy/done/FloodFill.java)                   |
-|  766 |                       Toeplitz Matrix                        |               Array, Matrix               |                  [Java Code](src/main/java/easy/done/ToeplitzMatrix.java)                   |
+|  766 |                       Toeplitz Matrix                        |               Array, Matrix               |                [Java Code](src/main/java/easy/done/ToeplitzMatrix.java)                |
 |  804 |                   Unique Morse Code Words                    |         Array, Hash Table, String         |             [Java Code](src/main/java/easy/done/UniqueMorseCodeWords.java)             |
 |  804 |            Unique Morse Code Words (**Streams**)             |    Array, Hash Table, String, Streams     |         [Java Code](src/main/java/easy/done/UniqueMorseCodeWordsStreams.java)          |
 |  819 |                       Most Common Word                       |       String, Hash Table, Counting        |                [Java Code](src/main/java/easy/done/MostCommonWord.java)                |
-|  867 |                       Transpose Matrix                       |               Array, Matrix               |                [Java Code](src/main/java/easy/done/TransposeMatrix.java)                |
-|  883 |                 Projection Area of 3D Shapes                 |               Array, Matrix               |                [Java Code](src/main/java/easy/done/ProjectionArea3DShapes.java)                |
+|  867 |                       Transpose Matrix                       |               Array, Matrix               |               [Java Code](src/main/java/easy/done/TransposeMatrix.java)                |
+|  883 |                 Projection Area of 3D Shapes                 |               Array, Matrix               |            [Java Code](src/main/java/easy/done/ProjectionArea3DShapes.java)            |
 |  941 |                     Valid Mountain Array                     |            Array, Two Pointers            |              [Java Code](src/main/java/easy/done/ValidMountainArray.java)              |
 |  976 |                  Largest Perimeter Triangle                  |              Array, Sorting               |           [Java Code](src/main/java/easy/done/LargestPerimeterTriangle.java)           |
 | 1050 |                        Height Checker                        |              Array, Sorting               |                [Java Code](src/main/java/easy/done/HeightChecker.java)                 |
 | 1295 |           Find Numbers with Even Number of Digits            |              String, Ponters              |           [Java Code](src/main/java/easy/done/MergeStringsAlternately.java)            |
+| 1380 |                  Lucky Numbers in a Matrix                   |               Array, Matrix               |             [Java Code](src/main/java/easy/done/LuckyNumbersInMatrix.java)             |
 | 1413 |        Minimum Value to Get Positive Step by Step Sum        |             Array, Prefix Sum             |        [Java Code](src/main/java/easy/done/MinimumValueToPositiveStepSum.java)         |
 | 1422 |            Maximum Score After Splitting a String            |            String, Prefix Sum             |       [Java Code](src/main/java/easy/done/MaximumScoreAfterSplittingString.java)       |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |              Array, Sorting               |     [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)     |
+| 1572 |                     Matrix Diagonal Sum                      |            Array, Matrix, Math            |              [Java Code](src/main/java/easy/done/MatrixDiagonalSum.java)               |
+| 1582 |             Special Positions in a Binary Matrix             |               Array, Matrix               |        [Java Code](src/main/java/easy/done/SpecialPositionsInBinaryMatrix.java)        |
 | 1588 |               Sum of All Odd Length Subarrays                |             Array, Prefix Sum             |           [Java Code](src/main/java/easy/done/SumAllOddLengthSubarrays.java)           |
 | 1634 |                      Buy Two Chocolates                      |              Array, Sorting               |               [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)               |
 | 1652 |                       Defuse the Bomb                        |                   Array                   |                [Java Code](src/main/java/easy/done/DefuseTheBomb.java)                 |
@@ -71,6 +74,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1984 |  Minimum Difference Between Highest and Lowest of K Scores   |      Array, Sorting, Sliding window       | [Java Code](src/main/java/easy/done/MinimumDifferenceBetweenHighestLowestKScores.java) |
 | 2037 |           Minimum Number of Moves to Seat Everyone           |              Array, Sorting               |        [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)        |
 | 2269 |                  Find K-Beauty of a Number                   |               String, Math                |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)              |
+| 2373 |               Largest Local Values in a Matrix               |               Array, Matrix               |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
 | 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |          String, Sliding Window           |  [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)   |
 | 2760 |           Longest Even Odd Subarray with Threshold           |           Array, Sliding Window           |     [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)      |
 
@@ -78,18 +82,19 @@ This repository contains my solutions to LeetCode problems in Java.
 
 ### Medium Problems
 
-| # | Problem Title   | Topics |                       Solution                       |
-|--:|:----------------|:------:|:----------------------------------------------------:|
-| 2 | Add Two Numbers |        | [Java Code](src/main/java/medium/AddTwoNumbers.java) |
+|   # |      Problem Title       |               Topics               |                       Solution                       |
+|----:|:------------------------:|:----------------------------------:|:----------------------------------------------------:|
+|   2 |     Add Two Numbers      |                                    | [Java Code](src/main/java/medium/AddTwoNumbers.java) |
+| 287 |Find the Duplicate Number | Array, Two Pointers, Binary Search | [Java Code](src/main/java/medium/FindDuplicate.java) |
 
 ---
 
 ### Hard Problems
 
-|    # | Problem Title            |                                  Topics                                   |                    Solution                     |
-|-----:|:-------------------------|:-------------------------------------------------------------------------:|:-----------------------------------------------:|
-|   41 | First Missing Positive   |                                                                           | [Java Code](src/main/java/hard/FirstMissingPositive.java) |
-| 1499 | Max Value of Equation    | Array, Queue, Sliding Window, <br/>Heap (Priority Queue), Monotonic Queue | [Java Code](src/main/java/hard/MaxValueOfEquation.java) |
+|    # |      Problem Title       |                                  Topics                                   |                    Solution                     |
+|-----:|:------------------------:|:-------------------------------------------------------------------------:|:-----------------------------------------------:|
+|   41 |  First Missing Positive  |                                                                           | [Java Code](src/main/java/hard/FirstMissingPositive.java) |
+| 1499 |  Max Value of Equation   | Array, Queue, Sliding Window, <br/>Heap (Priority Queue), Monotonic Queue | [Java Code](src/main/java/hard/MaxValueOfEquation.java) |
 
 ---
 
