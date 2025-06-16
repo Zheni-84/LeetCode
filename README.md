@@ -23,6 +23,7 @@ This repository contains my solutions to LeetCode problems in Java.
 
 |    # |                           Problem                            |                  Topics                   |                                        Solution                                        |
 |-----:|:------------------------------------------------------------:|:-----------------------------------------:|:--------------------------------------------------------------------------------------:|
+|   13 |                       Roman to Integer                       |         String, Hash Table, Math          |                [Java Code](src/main/java/easy/done/RomanToInteger.java)                |
 |   66 |                           Plus one                           |                Array, Math                |                   [Java Code](src/main/java/easy/done/PlusOne.java)                    |
 |  125 |                       Valid Palindrome                       |           Two Pointers, String            |               [Java Code](src/main/java/easy/done/ValidPalindrome.java)                |
 |  133 |                Reverse Words in a String III                 |              String, Streams              |               [Java Code](src/main/java/easy/done/ReverseWordsIII.java)                |
