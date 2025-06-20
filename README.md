@@ -26,6 +26,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |   13 |                       Roman to Integer                       |              String, Hash Table, Math              |                [Java Code](src/main/java/easy/done/RomanToInteger.java)                |
 |   14 |                    Longest Common Prefix                     | String, Array, Divide and Conquer, String Matching |             [Java Code](src/main/java/easy/done/LongestCommonPrefix.java)              |
 |   20 |                      Valid Parentheses                       |             Stack, String, Hash Table              |               [Java Code](src/main/java/easy/done/ValidParentheses.java)               |
+|   28 |      Find the Index of the First Occurrence in a String      |       String, String Matching, Two Pointers        |      [Java Code](src/main/java/easy/done/FindIndexOfFirstOccurrenceInString.java)      |
 |   66 |                           Plus one                           |                    Array, Math                     |                   [Java Code](src/main/java/easy/done/PlusOne.java)                    |
 |  125 |                       Valid Palindrome                       |                Two Pointers, String                |               [Java Code](src/main/java/easy/done/ValidPalindrome.java)                |
 |  133 |                Reverse Words in a String III                 |                  String, Streams                   |               [Java Code](src/main/java/easy/done/ReverseWordsIII.java)                |
