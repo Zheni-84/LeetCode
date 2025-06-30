@@ -15,7 +15,7 @@ public class FindIndexOfFirstOccurrenceInString {
 	public static void main(String[] args) {
 		String haystack = "hello";
 		String needle = "ll";
-		int index = strStr(haystack, needle);
+		int index = strStr2(haystack, needle);
 		System.out.println("Index of first occurrence: " + index); // Output: 2
 
 		haystack = "aaaaa";
@@ -46,6 +46,30 @@ public class FindIndexOfFirstOccurrenceInString {
 			}
 		}
 		// If no match found, return -1
+		return -1;
+	}
+
+	private static int strStr2(String haystack, String needle) {
+		int n = haystack.length();
+		int m = needle.length();
+
+		if(m > n){
+			return -1;
+		}
+
+		for(int i = 0; i <= n-m; i++){
+			int j = 0;
+			while(j<m){
+				if(haystack.charAt(i+j)!=needle.charAt(j)){
+					break;
+				}
+				j++;
+			}
+			if(j==m){
+				return i;
+			}
+		}
+
 		return -1;
 	}
 }
