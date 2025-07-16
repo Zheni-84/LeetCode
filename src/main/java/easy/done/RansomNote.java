@@ -24,7 +24,7 @@ public class RansomNote {
 
 		ransomNote = "aa";
 		magazine = "ab";
-		result = canConstructOptimal(ransomNote, magazine);
+		result = canConstructBrute(ransomNote, magazine);
 		System.out.println("Can construct ransom note: " + result); // Output: false
 
 		ransomNote = "aa";
@@ -34,25 +34,32 @@ public class RansomNote {
 	}
 
 	private static boolean canConstructOptimal(String ransomNote, String magazine) {
+		// Create an array to count occurrences of each character (a-z)
 		int[] letters = new int[26];
 
+		// Count the occurrences of each character in the magazine
 		for(char c : magazine.toCharArray()){
 			letters[c - 'a']++;
 		}
 
+		// Check if we can construct the ransom note using the characters from the magazine
 		for(char c : ransomNote.toCharArray()){
+			//This works even when c is not in the magazine, since letters[c - 'a'] will be 0, so we can safely decrement it
 			letters[c - 'a']--;
+			// If the count goes below zero, we cannot construct the ransom note
 			if( letters[c - 'a'] < 0){
 				return false;
 			}
 		}
 
+		// If we successfully checked all characters, we can construct the ransom note
 		return true;
 	}
 
 	private static boolean canConstructBrute(String ransomNote, String magazine) {
 		StringBuilder sb = new StringBuilder(magazine);
 
+		// Iterate through each character in the ransom note
 		for (char c : ransomNote.toCharArray()) {
 			// Find the index of the character in the magazine
 			int index = sb.indexOf(String.valueOf(c));
