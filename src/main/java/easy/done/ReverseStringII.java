@@ -61,7 +61,8 @@ public class ReverseStringII {
 		for (int i = 0; i < n; i += 2 * k) {
 			int end = Math.min(i + k, n);
 			//Reverse the first k chars
-			result.append(new StringBuilder(s.substring(i, end)).reverse());
+			StringBuilder reversed = new StringBuilder(s.substring(i, end)).reverse();
+			result.append(reversed);
 
 			//Append the next k characters (if any)
 			if (end < n) {
