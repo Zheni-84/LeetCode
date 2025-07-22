@@ -52,6 +52,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  495 |                       Teemo Attacking                        |                   Array, Greedy                    |                [Java Code](src/main/java/easy/done/TeemoAttacking.java)                |
 |  496 |                    Next Greater Element I                    |     Array, Hash Table, Stack, Monotonic Stack      |             [Java Code](src/main/java/easy/done/NextGreaterElement1.java)              |
 |  506 |                        Relative Ranks                        |       Array, Sorting, Heap (Priority Queue)        |                [Java Code](src/main/java/easy/done/RelativeRanks.java)                 |
+|  521 |                Longest Uncommon Subsequence I                |                       String                       |         [Java Code](src/main/java/easy/done/LongestUncommonSubsequenceI.java)          |
 |  541 |                      Reverse String II                       |                       String                       |               [Java Code](src/main/java/easy/done/ReverseStringII.java)                |
 |  557 |                Reverse Words in a String III                 |                String, Two Pointers                |           [Java Code](src/main/java/easy/done/ReverseWordsInAStringIII.java)           |
 |  557 |         Reverse Words in a String III (**Streams**)          |           String, Stream, StringBuilder            |        [Java Code](src/main/java/easy/done/ReverseWordsInAStringIIIStream.java)        |
