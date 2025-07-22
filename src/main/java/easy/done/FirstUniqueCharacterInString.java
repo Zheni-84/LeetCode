@@ -46,4 +46,24 @@ public class FirstUniqueCharacterInString {
 
 		return -1;
 	}
+
+	private static int firstUniqCharHashMap(String s) {
+		// Using a HashMap to count occurrences
+		java.util.Map<Character, Integer> charCount = new java.util.HashMap<>();
+
+		// Count the occurrences of each character
+		for (char c : s.toCharArray()) {
+			charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+		}
+
+		// Iterate through the string again to find the first unique character
+		for (int i = 0; i < s.length(); i++) {
+			if (charCount.get(s.charAt(i)) == 1) {
+				return i;
+			}
+		}
+
+		return -1;
+
+	}
 }
