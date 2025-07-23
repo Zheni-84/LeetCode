@@ -57,6 +57,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  557 |                Reverse Words in a String III                 |                String, Two Pointers                |           [Java Code](src/main/java/easy/done/ReverseWordsInAStringIII.java)           |
 |  557 |         Reverse Words in a String III (**Streams**)          |           String, Stream, StringBuilder            |        [Java Code](src/main/java/easy/done/ReverseWordsInAStringIIIStream.java)        |
 |  594 |                Longest Harmonious Subsequence                |                 Array, Hash Table                  |         [Java Code](src/main/java/easy/done/LongestHarmoniousSubsequence.java)         |
+|  599 |                Minimum Index Sum of Two Lists                |             Array, Hash Table, String              |           [Java Code](src/main/java/easy/done/MinimumIndexSumTwoLists.java)            |
 |  661 |                        Image Smoother                        |                   Array, Matrix                    |                [Java Code](src/main/java/easy/done/ImageSmoother.java)                 |
 |  605 |                      Can Place Flowers                       |                   Array, Greedy                    |               [Java Code](src/main/java/easy/done/CanPlaceFlowers.java)                |
 |  643 |                  Maximum Average Subarray I                  |               Array, Sliding Window                |           [Java Code](src/main/java/easy/done/MaximumAverageSubarrayI.java)            |
