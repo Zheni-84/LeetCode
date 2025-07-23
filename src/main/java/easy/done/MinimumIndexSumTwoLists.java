@@ -1,9 +1,6 @@
 package easy.done;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * LeetCode Problem 599 - Minimum Index Sum of Two Lists
@@ -21,12 +18,10 @@ public class MinimumIndexSumTwoLists {
 
 	public static void main(String[] args) {
 		String[] list1 = { "Shogun", "Tapioca Express", "Burger King", "KFC" };
-		String[] list2 = { "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun" };
+		String[] list2 = { "Piatti", "Burger King", "The Grill at Torrey Pines", "Shogun", "Hungry Hunter Steakhouse" };
 
 		String[] result = findRestaurant(list1, list2);
-		for (String restaurant : result) {
-			System.out.println(restaurant);
-		}
+		System.out.println(String.join(", ", result));
 	}
 
 	private static String[] findRestaurant(String[] list1, String[] list2) {
