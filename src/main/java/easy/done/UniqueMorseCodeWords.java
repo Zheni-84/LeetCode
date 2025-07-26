@@ -1,7 +1,9 @@
 package easy.done;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * LeetCode Problem 804 - Unique Morse Code Words
@@ -29,21 +31,21 @@ public class UniqueMorseCodeWords {
 
 	public static void main(String[] args) {
 		// Example usage
-		String[] words = {"gin", "zen", "gig", "msg"};
+		String[] words = { "gin", "zen", "gig", "msg" };
 		int result = uniqueMorseRepresentations(words);
 		System.out.println("Number of unique Morse code representations: " + result);
 	}
 
 	private static int uniqueMorseRepresentations(String[] words) {
-		String[] morseCodes = {".-","-...","-.-.","-..",".","..-.","--.","....","..",
-				".---","-.-",".-..","--","-.","---",".--.","--.-",".-.",
-				"...","-","..-","...-",".--","-..-","-.--","--.."};
+		String[] morseCodes = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..",
+				".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.",
+				"...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.." };
 
 		// Using a HashSet to store unique Morse code transformations
 		Set<String> transformations = new HashSet<>();
 		for (String word : words) {
 			StringBuilder transformation = new StringBuilder();
-			for(char c : word.toCharArray()) {
+			for (char c : word.toCharArray()) {
 				// Convert each character to its corresponding Morse code
 				// 'a' is 97 in ASCII, so we subtract 97 to get the index
 				// of the Morse code for the character
@@ -55,5 +57,18 @@ public class UniqueMorseCodeWords {
 		}
 
 		return transformations.size();
+	}
+
+	private static int uniqueMorseRepresentationsStream(String[] words) {
+		String[] morseCodes = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..",
+				".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.",
+				"...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.." };
+
+		return Arrays.stream(words)
+				.map(word -> word.chars()
+						.mapToObj(c -> morseCodes[c - 'a'])
+						.collect(Collectors.joining()))
+				.collect(Collectors.toSet())
+				.size();
 	}
 }
