@@ -71,6 +71,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  804 |                   Unique Morse Code Words                    |             Array, Hash Table, String              |             [Java Code](src/main/java/easy/done/UniqueMorseCodeWords.java)             |
 |  804 |            Unique Morse Code Words (**Streams**)             |         Array, Hash Table, String, Streams         |         [Java Code](src/main/java/easy/done/UniqueMorseCodeWordsStreams.java)          |
 |  819 |                       Most Common Word                       |            String, Hash Table, Counting            |                [Java Code](src/main/java/easy/done/MostCommonWord.java)                |
+|  830 |                  Positions of Large Groups                   |                String, Two Pointers                |              [Java Code](src/main/java/easy/PositionsOfLargeGroups.java)               |
 |  867 |                       Transpose Matrix                       |                   Array, Matrix                    |               [Java Code](src/main/java/easy/done/TransposeMatrix.java)                |
 |  883 |                 Projection Area of 3D Shapes                 |                   Array, Matrix                    |            [Java Code](src/main/java/easy/done/ProjectionArea3DShapes.java)            |
 |  941 |                     Valid Mountain Array                     |                Array, Two Pointers                 |              [Java Code](src/main/java/easy/done/ValidMountainArray.java)              |
