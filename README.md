@@ -79,6 +79,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  917 |                     Reverse Only Letters                     |                String, Two Pointers                |              [Java Code](src/main/java/easy/done/ReverseOnlyLetters.java)              |
 |  941 |                     Valid Mountain Array                     |                Array, Two Pointers                 |              [Java Code](src/main/java/easy/done/ValidMountainArray.java)              |
 |  942 |                       DI String Match                        |                   Array, Greedy                    |                [Java Code](src/main/java/easy/done/DIStringMatch.java)                 |
+|  953 |                Verifying an Alien Dictionary                 |                Array, HashMap Table                |           [Java Code](src/main/java/easy/done/VerifyingAlienDictionary.java)           |
 |  976 |                  Largest Perimeter Triangle                  |                   Array, Sorting                   |           [Java Code](src/main/java/easy/done/LargestPerimeterTriangle.java)           |
 | 1050 |                        Height Checker                        |                   Array, Sorting                   |                [Java Code](src/main/java/easy/done/HeightChecker.java)                 |
 | 1295 |           Find Numbers with Even Number of Digits            |                  String, Pointers                  |        [Java Code](src/main/java/easy/done/NumbersWithEvenNumberOfDigits.java)         |
