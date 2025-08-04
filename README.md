@@ -90,6 +90,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1380 |                  Lucky Numbers in a Matrix                   |                   Array, Matrix                    |             [Java Code](src/main/java/easy/done/LuckyNumbersInMatrix.java)             |
 | 1413 |        Minimum Value to Get Positive Step by Step Sum        |                 Array, Prefix Sum                  |        [Java Code](src/main/java/easy/done/MinimumValueToPositiveStepSum.java)         |
 | 1422 |            Maximum Score After Splitting a String            |                 String, Prefix Sum                 |       [Java Code](src/main/java/easy/done/MaximumScoreAfterSplittingString.java)       |
+| 1446 |                    Consecutive Characters                    |                       String                       |            [Java Code](src/main/java/easy/done/ConsecutiveCharacters.java)             |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |                   Array, Sorting                   |     [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)     |
 | 1572 |                     Matrix Diagonal Sum                      |                Array, Matrix, Math                 |              [Java Code](src/main/java/easy/done/MatrixDiagonalSum.java)               |
 | 1582 |             Special Positions in a Binary Matrix             |                   Array, Matrix                    |        [Java Code](src/main/java/easy/done/SpecialPositionsInBinaryMatrix.java)        |
