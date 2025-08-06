@@ -1,6 +1,5 @@
-package easy;
+package easy.done;
 
-//add leetcode documentation
 /**
  * LeetCode Problem: 1662. Check If Two String Arrays are Equivalent
  * Time: O(n + m) where n is the total length of all strings in word1 and m is the total length of all strings in word2.
