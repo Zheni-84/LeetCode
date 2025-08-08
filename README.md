@@ -111,6 +111,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1903 |                 Largest Odd Number in String                 |                       String                       |           [Java Code](src/main/java/easy/done/LargestOddNumberInString.java)           |
 | 1913 |         Maximum Product Difference Between Two Pairs         |                   Array, Sorting                   |   [Java Code](src/main/java/easy/done/MaximumProductDifferenceBetweenTwoPairs.java)    |
 | 1984 |  Minimum Difference Between Highest and Lowest of K Scores   |           Array, Sorting, Sliding window           | [Java Code](src/main/java/easy/done/MinimumDifferenceBetweenHighestLowestKScores.java) |
+| 2000 |                    Reverse Prefix of Word                    |                       Array                        |             [Java Code](src/main/java/easy/done/ReversePrefixOfWord.java)              |
 | 2037 |           Minimum Number of Moves to Seat Everyone           |                   Array, Sorting                   |        [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)        |
 | 2269 |                  Find K-Beauty of a Number                   |                    String, Math                    |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)              |
 | 2373 |               Largest Local Values in a Matrix               |                   Array, Matrix                    |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
