@@ -118,6 +118,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2269 |                  Find K-Beauty of a Number                   |                    String, Math                    |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)              |
 | 2373 |               Largest Local Values in a Matrix               |                   Array, Matrix                    |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
 | 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |               String, Sliding Window               |  [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)   |
+| 2678 |                  Number of Senior Citizens                   |                   String, Array                    |            [Java Code](src/main/java/easy/done/NumberOfSeniorCitizens.java)            |
 | 2760 |           Longest Even Odd Subarray with Threshold           |               Array, Sliding Window                |     [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)      |
 
 ---
