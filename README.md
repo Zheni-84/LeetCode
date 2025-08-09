@@ -113,6 +113,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1984 |  Minimum Difference Between Highest and Lowest of K Scores   |           Array, Sorting, Sliding window           | [Java Code](src/main/java/easy/done/MinimumDifferenceBetweenHighestLowestKScores.java) |
 | 2000 |                    Reverse Prefix of Word                    |                       Array                        |             [Java Code](src/main/java/easy/done/ReversePrefixOfWord.java)              |
 | 2037 |           Minimum Number of Moves to Seat Everyone           |                   Array, Sorting                   |        [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)        |
+| 2108 |          Find First Palindromic String in the Array          |                   Array, String                    |     [Java Code](src/main/java/easy/done/FindFirstPalindromicStringInTheArray.java)     |
 | 2269 |                  Find K-Beauty of a Number                   |                    String, Math                    |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)              |
 | 2373 |               Largest Local Values in a Matrix               |                   Array, Matrix                    |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
 | 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |               String, Sliding Window               |  [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)   |
