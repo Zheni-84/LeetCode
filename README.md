@@ -94,6 +94,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1446 |                    Consecutive Characters                    |                       String                       |            [Java Code](src/main/java/easy/done/ConsecutiveCharacters.java)             |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |                   Array, Sorting                   |     [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)     |
 | 1496 |                        Path Crossing                         |                 Hash Table, String                 |                 [Java Code](src/main/java/easy/done/PathCrossing.java)                 |
+| 1524 |            Largest 3-Same-Digit Number in String             |                       String                       |       [Java Code](src/main/java/easy/done/Largest3SameDigitNumberInString.java)        |
 | 1572 |                     Matrix Diagonal Sum                      |                Array, Matrix, Math                 |              [Java Code](src/main/java/easy/done/MatrixDiagonalSum.java)               |
 | 1582 |             Special Positions in a Binary Matrix             |                   Array, Matrix                    |        [Java Code](src/main/java/easy/done/SpecialPositionsInBinaryMatrix.java)        |
 | 1588 |               Sum of All Odd Length Subarrays                |                 Array, Prefix Sum                  |           [Java Code](src/main/java/easy/done/SumAllOddLengthSubarrays.java)           |

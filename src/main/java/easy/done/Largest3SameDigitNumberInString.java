@@ -1,4 +1,4 @@
-package easy;
+package easy.done;
 
 /* * LeetCode Problem: 1524. Largest 3-Same-Digit Number in String
  * Space: O(1)
