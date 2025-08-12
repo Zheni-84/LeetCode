@@ -32,6 +32,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |   67 |                      Add Binary Strings                      |           String, Math, Bit Manipulation           |               [Java Code](src/main/java/easy/done/AddBinaryStrings.java)               |
 |   94 |                Binary Tree Inorder Traversal                 |       Tree, Depth-First Search, Binary Tree        |          [Java Code](src/main/java/easy/done/BinaryTreeInorderTraversal.java)          |
 |  100 |                          Same Tree                           |                  Tree, Recursion                   |                   [Java Code](src/main/java/easy/done/SameTree.java)                   |
+|  101 |                        SymmetricTree                         |                   Tree, DFS, BFS                   |                [Java Code](src/main/java/easy/done/SymmetricTree.java)                 |
 |  125 |                       Valid Palindrome                       |                Two Pointers, String                |               [Java Code](src/main/java/easy/done/ValidPalindrome.java)                |
 |  133 |                Reverse Words in a String III                 |                  String, Streams                   |               [Java Code](src/main/java/easy/done/ReverseWordsIII.java)                |
 |  136 |                        Single Number                         |              Arrays, Bit Manipulation              |                 [Java Code](src/main/java/easy/done/SingleNumber.java)                 |
