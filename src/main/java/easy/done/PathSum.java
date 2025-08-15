@@ -67,9 +67,11 @@ public class PathSum {
 			TreeNode node = nodeQueue.poll();
 			int sum = sumQueue.poll();
 
+			// Check if we have reached a leaf node and if the sum equals targetSum
 			if (node.left == null && node.right == null && sum == targetSum) {
 				return true;
 			}
+			// If not a leaf, continue to add child nodes and their corresponding sums to the queues for further exploration
 			if (node.left != null) {
 				nodeQueue.offer(node.left);
 				sumQueue.offer(sum + node.left.val);
@@ -79,6 +81,8 @@ public class PathSum {
 				sumQueue.offer(sum + node.right.val);
 			}
 		}
+
+		// If we exhaust the queue without finding a valid path, return false
 		return false;
 	}
 
