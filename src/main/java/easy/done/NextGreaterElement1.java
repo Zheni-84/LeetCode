@@ -4,6 +4,8 @@ import java.util.*;
 
 /**
  * LeetCode Problem 496 - Next Greater Element I
+ * Time Complexity: O(nums1.length + nums2.length) - We traverse both arrays once.
+ * Space Complexity: O(nums2.length) - We use a map to store the next greater elements for nums2.
  * Topics: Array, Hash Table, Stack, Monotonic Stack
  * <p>
  * Description:
@@ -14,6 +16,11 @@ import java.util.*;
  * and determine the next greater element of nums2[j] in nums2. If there is no
  * next greater element, then the answer for this query is -1.
  * <p>
+ * Hint: You can use a stack to keep track of the next greater elements.
+ * Iterate through nums2 and for each element, pop elements from the stack until
+ * you find a greater element. Store the mapping of each element to its next greater
+ * element in a map. Then, for each element in nums1, retrieve the next greater element from the map.
+ *
  * Link: https://leetcode.com/problems/next-greater-element-i/
  */
 public class NextGreaterElement1 {

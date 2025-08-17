@@ -2,6 +2,8 @@ package easy.done;
 
 /**
  * LeetCode Problem 495 - Teemo Attacking
+ * Time Complexity: O(n), where n is the length of the timeSeries array.
+ * Space Complexity: O(1), since we are using a constant amount of space.
  * Topics: Array, Greedy
  * <p>
  * Description:
@@ -9,6 +11,10 @@ package easy.done;
  * 	Given an array of integers representing the time series of Teemo's attacks,
  * 	and an integer duration representing the poison duration,
  * 	return the total time that the enemy is poisoned.
+ * 	Hint: If two attacks overlap, the poison duration is extended.
+ * 	For example, if Teemo attacks at time t1 and then at t2,
+ * 	if t2 is less than or equal to t1 + duration,
+ * 	the poison duration is extended to t2 + duration.
  *
  * Link: https://leetcode.com/problems/teemo-attacking/
  */
