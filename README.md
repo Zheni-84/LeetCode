@@ -54,6 +54,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  387 |              First Unique Character in a String              |           Index array, String, Counting            |         [Java Code](src/main/java/easy/done/FirstUniqueCharacterInString.java)         |
 |  392 |                        Is Subsequence                        |                Two Pointers, String                |                [Java Code](src/main/java/easy/done/IsSubsequence.java)                 |
 |  392 |                  Is Subsequence (Optimized)                  |               String, Binary Search                |            [Java Code](src/main/java/easy/done/IsSubsequenceOptimized.java)            |
+|  404 |                      Sum of Left Leaves                      |                  Binary Tree, DFS                  |               [Java Code](src/main/java/easy/done/SumOfLeftLeaves.java)                |
 |  409 |                      Longest Palindrome                      |                       String                       |              [Java Code](src/main/java/easy/done/LongestPalindrome.java)               |
 |  414 |                     Third Maximum Number                     |                       String                       |              [Java Code](src/main/java/easy/done/ThirdMaximumNumber.java)              |
 |  434 |                Number of Segments in a String                |              Arrays, Sorting, TreeSet              |           [Java Code](src/main/java/easy/done/NumberOfSegmentsInString.java)           |
