@@ -67,6 +67,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  521 |                Longest Uncommon Subsequence I                |                       String                       |         [Java Code](src/main/java/easy/done/LongestUncommonSubsequenceI.java)          |
 |  530 |              Minimum Absolute Difference in BST              |              BST, In-Order Traversal               |        [Java Code](src/main/java/easy/done/MinimumAbsoluteDifferenceInBST.java)        |
 |  541 |                      Reverse String II                       |                       String                       |               [Java Code](src/main/java/easy/done/ReverseStringII.java)                |
+|  543 |                   Diameter of Binary Tree                    |                      BST, DFS                      |             [Java Code](src/main/java/easy/done/DiameterOfBinaryTree.java)             |
 |  557 |                Reverse Words in a String III                 |                String, Two Pointers                |           [Java Code](src/main/java/easy/done/ReverseWordsInAStringIII.java)           |
 |  557 |         Reverse Words in a String III (**Streams**)          |           String, Stream, StringBuilder            |        [Java Code](src/main/java/easy/done/ReverseWordsInAStringIIIStream.java)        |
 |  594 |                Longest Harmonious Subsequence                |                 Array, Hash Table                  |         [Java Code](src/main/java/easy/done/LongestHarmoniousSubsequence.java)         |
