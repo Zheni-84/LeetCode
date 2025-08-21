@@ -23,6 +23,7 @@ This repository contains my solutions to LeetCode problems in Java.
 
 |    # |                           Problem                            |                       Topics                       |                                        Solution                                        |
 |-----:|:------------------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------------------------------------------:|
+|    1 |                           Two Sum                            |                 Array, Hash Table                  |                    [Java Code](src/main/java/easy/done/TwoSum.java)                    |
 |   13 |                       Roman to Integer                       |              String, Hash Table, Math              |                [Java Code](src/main/java/easy/done/RomanToInteger.java)                |
 |   14 |                    Longest Common Prefix                     | String, Array, Divide and Conquer, String Matching |             [Java Code](src/main/java/easy/done/LongestCommonPrefix.java)              |
 |   20 |                      Valid Parentheses                       |             Stack, String, Hash Table              |               [Java Code](src/main/java/easy/done/ValidParentheses.java)               |
@@ -70,6 +71,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  543 |                   Diameter of Binary Tree                    |                      BST, DFS                      |             [Java Code](src/main/java/easy/done/DiameterOfBinaryTree.java)             |
 |  557 |                Reverse Words in a String III                 |                String, Two Pointers                |           [Java Code](src/main/java/easy/done/ReverseWordsInAStringIII.java)           |
 |  557 |         Reverse Words in a String III (**Streams**)          |           String, Stream, StringBuilder            |        [Java Code](src/main/java/easy/done/ReverseWordsInAStringIIIStream.java)        |
+|  563 |                       Binary Tree Tilt                       |                      BST, DFS                      |                [Java Code](src/main/java/easy/done/BinaryTreeTilt.java)                |
 |  594 |                Longest Harmonious Subsequence                |                 Array, Hash Table                  |         [Java Code](src/main/java/easy/done/LongestHarmoniousSubsequence.java)         |
 |  599 |                Minimum Index Sum of Two Lists                |             Array, Hash Table, String              |           [Java Code](src/main/java/easy/done/MinimumIndexSumTwoLists.java)            |
 |  661 |                        Image Smoother                        |                   Array, Matrix                    |                [Java Code](src/main/java/easy/done/ImageSmoother.java)                 |
