@@ -14,6 +14,9 @@ import java.util.stream.Collectors;
  * A substring is "nice" if for every letter in the substring,
  * both its uppercase and lowercase forms also appear in the substring.
  * Example: For input "YazaAay", the output is "aAa".
+ * Hint: use sliding window to check all substrings and a set to track characters.
+ * <p>
+ * Link: https://leetcode.com/problems/longest-nice-substring/
  */
 public class LongestNiceSubstring {
 
@@ -23,18 +26,13 @@ public class LongestNiceSubstring {
 		System.out.println("Divide&Conquer: " + longestNiceSubstringDC(s));
 	}
 
-	/**
-	 * Function to find the longest nice substring using Devide and Conquer.
-	 *
-	 * @param s The input string.
-	 * @return The longest nice substring.
-	 */
+	// Function to find the longest nice substring using Devide and Conquer.
 	private static String longestNiceSubstringDC(String s) {
 		return divideAndConquer(s, 0, s.length());
 	}
 
 	private static String divideAndConquer(String s, int start, int end) {
-		if(end - start < 2) {
+		if (end - start < 2) {
 			return "";
 		}
 
@@ -54,6 +52,7 @@ public class LongestNiceSubstring {
 			// Found a bad char — split around it
 			String left = divideAndConquer(s, start, i);
 			String right = divideAndConquer(s, i + 1, end);
+			// Return the longer of the two results
 			return left.length() >= right.length() ? left : right;
 		}
 

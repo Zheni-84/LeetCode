@@ -15,9 +15,9 @@ package easy.done;
 public class MergeStringsAlternately {
 
 	public static void main(String[] args) {
-		String word1 = "abc";
+		String word1 = "abcde";
 		String word2 = "pqr";
-		String result = mergeAlternately(word1, word2);
+		String result = mergeAlternately2(word1, word2);
 		// Output: "apbqcr"
 		System.out.println("Merged string: " + result);
 	}
@@ -41,5 +41,25 @@ public class MergeStringsAlternately {
 		}
 
 		return builder.toString();
+	}
+
+	public static String mergeAlternately2(String word1, String word2) {
+		int i = 0;
+		StringBuilder result = new StringBuilder();
+		while(i < word1.length() && i < word2.length()){
+			result.append(word1.charAt(i));
+			result.append(word2.charAt(i));
+			i++;
+		}
+		if(i < word1.length()-1){
+			String leftWord = word1.substring(i, word1.length());
+			result.append(leftWord);
+		}
+		if(i < word2.length()){
+			String leftWord = word2.substring(i, word2.length());
+			result.append(leftWord);
+		}
+
+		return result.toString();
 	}
 }

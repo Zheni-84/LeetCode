@@ -6,12 +6,15 @@ import java.util.Arrays;
 /**
  * LeetCode Problem 506 - Relative Ranks
  * Topics: Array, Sorting, Heap (Priority Queue)
+ * Time Complexity: O(n log n) due to sorting the indices based on scores.
+ * Space Complexity: O(n) for storing the indices and the result array.
  * <p>
  * Description:
  * You are given an integer array score of size n, where score[i] is the score of the ith athlete.
  * All the scores are guaranteed to be unique. The athletes are placed based on their scores,
  * where the 1st place athlete has the highest score, the 2nd place athlete has the 2nd highest score,
  * and so on. The placement of each athlete determines their rank.
+ * Hint: Use sorting to determine the ranks of the athletes based on their scores.
  * <p>
  * Link: https://leetcode.com/problems/relative-ranks/
  */
