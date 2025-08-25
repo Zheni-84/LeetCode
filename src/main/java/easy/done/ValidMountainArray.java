@@ -3,6 +3,8 @@ package easy.done;
 /**
  * LeetCode Problem 941 - Valid Mountain Array
  * Topics: Array, Two Pointers
+ * Time Complexity: O(n), where n is the length of the input array.
+ * Space Complexity: O(1), since we are using only a constant amount of extra space
  * <p>
  * Description:
  * Given an array of integers arr, return true if and only if it is a valid mountain array.
@@ -31,6 +33,10 @@ package easy.done;
  *   Example 6:
  * Input: arr = [1,2,3,4,5,6,7,8,9,8]
  * <p>
+ * Hint:
+ * - Use two pointers to traverse the array from both ends.
+ * - Ensure that there is a peak element that is greater than its neighbors.
+ * - Check that the array is strictly increasing before the peak and strictly decreasing after the peak.
  * Link: https://leetcode.com/problems/valid-mountain-array/
  */
 public class ValidMountainArray {
@@ -42,6 +48,30 @@ public class ValidMountainArray {
 	}
 
 	private static boolean validMountainArray(int[] arr) {
+		int n = arr.length;
+		if (n < 3) {
+			return false; // A mountain array must have at least 3 elements
+		}
+
+		int left = 0;
+		int right = n - 1;
+
+		// Move left pointer to the peak
+		while (left + 1 < n && arr[left] < arr[left + 1]) {
+			left++;
+		}
+
+		// Move right pointer to the peak
+		while (right - 1 >= 0 && arr[right] < arr[right - 1]) {
+			right--;
+		}
+
+		// Check if both pointers meet at the same peak and it's not at the ends
+		return left > 0 && right < n - 1 && left == right;
+
+	}
+
+	private static boolean validMountainArray2(int[] arr) {
 		// Check if the array length is less than or equal to 3
 		if (arr.length < 3) {
 			return false;
