@@ -101,6 +101,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  941 |                     Valid Mountain Array                     |                Array, Two Pointers                 |              [Java Code](src/main/java/easy/done/ValidMountainArray.java)              |
 |  942 |                       DI String Match                        |                   Array, Greedy                    |                [Java Code](src/main/java/easy/done/DIStringMatch.java)                 |
 |  953 |                Verifying an Alien Dictionary                 |                Array, HashMap Table                |           [Java Code](src/main/java/easy/done/VerifyingAlienDictionary.java)           |
+|  965 |                    Univalued Binary Tree                     |                      BST, BFS                      |             [Java Code](src/main/java/easy/done/UniValuedBinaryTree.java)              |
 |  976 |                  Largest Perimeter Triangle                  |                   Array, Sorting                   |           [Java Code](src/main/java/easy/done/LargestPerimeterTriangle.java)           |
 | 1002 |                    Find Common Characters                    |                Array, HashMap Table                |             [Java Code](src/main/java/easy/done/FindCommonCharacters.java)             |
 | 1050 |                        Height Checker                        |                   Array, Sorting                   |                [Java Code](src/main/java/easy/done/HeightChecker.java)                 |
