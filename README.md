@@ -140,6 +140,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2037 |           Minimum Number of Moves to Seat Everyone           |                   Array, Sorting                   |        [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)        |
 | 2108 |          Find First Palindromic String in the Array          |                   Array, String                    |     [Java Code](src/main/java/easy/done/FindFirstPalindromicStringInTheArray.java)     |
 | 2269 |                  Find K-Beauty of a Number                   |                    String, Math                    |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)              |
+| 2331 |                 Evaluate Boolean Binary Tree                 |                      BST, DFS                      |          [Java Code](src/main/java/easy/done/EvaluateBooleanBinaryTree.java)           |
 | 2373 |               Largest Local Values in a Matrix               |                   Array, Matrix                    |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
 | 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |               String, Sliding Window               |  [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)   |
 | 2678 |                  Number of Senior Citizens                   |                   String, Array                    |            [Java Code](src/main/java/easy/done/NumberOfSeniorCitizens.java)            |
@@ -150,10 +151,11 @@ This repository contains my solutions to LeetCode problems in Java.
 
 ### Medium Problems
 
-|   # |      Problem Title       |               Topics               |                       Solution                       |
-|----:|:------------------------:|:----------------------------------:|:----------------------------------------------------:|
-|   2 |     Add Two Numbers      |                                    | [Java Code](src/main/java/medium/AddTwoNumbers.java) |
-| 287 |Find the Duplicate Number | Array, Two Pointers, Binary Search | [Java Code](src/main/java/medium/FindDuplicate.java) |
+|   # |          Problem Title           |               Topics               |                               Solution                               |
+|----:|:--------------------------------:|:----------------------------------:|:--------------------------------------------------------------------:|
+|   2 |         Add Two Numbers          |                                    |         [Java Code](src/main/java/medium/AddTwoNumbers.java)         |
+| 150 | Evaluate Reverse Polish Notation |            Stack, Array            | [Java Code](src/main/java/medium/EvaluateReversePolishNotation.java) |
+| 287 |    Find the Duplicate Number     | Array, Two Pointers, Binary Search |         [Java Code](src/main/java/medium/FindDuplicate.java)         |
 
 ---
 
