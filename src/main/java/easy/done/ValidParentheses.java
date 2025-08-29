@@ -28,27 +28,43 @@ import java.util.Map;
  *   - 1 <= s.length <= 10^4
  *   - s consists of parentheses only '()[]{}'
  *
- * This class provides a static method isValid to check the validity of the parentheses string.
+ * Hint: Use a stack to keep track of opening brackets and ensure they are closed in the correct order.
  * https://leetcode.com/problems/valid-parentheses/
  */
 public class ValidParentheses {
 
 	public static void main(String[] args) {
-		ValidParentheses vp = new ValidParentheses();
 		String s1 = "([{}])"; // true
 		String s2 = "([)]";   // false
 		String s3 = "{[()]}"; // true
 		String s4 = "{[(])}"; // false
 		String s5 = "()"; // true
 
-		System.out.println("Is valid: " + vp.isValid(s1)); // true
-		System.out.println("Is valid: " + vp.isValid(s2)); // false
-		System.out.println("Is valid: " + vp.isValid(s3)); // true
-		System.out.println("Is valid: " + vp.isValid(s4)); // false
-		System.out.println("Is valid: " + vp.isValid(s5)); // true
+		System.out.println("Is valid: " + isValid3(s1)); // true
+		System.out.println("Is valid: " + isValid3(s2)); // false
+		System.out.println("Is valid: " + isValid1(s3)); // true
+		System.out.println("Is valid: " + isValid2(s4)); // false
+		System.out.println("Is valid: " + isValid2(s5)); // true
 	}
 
-	private static boolean isValid(String s) {
+	private static boolean isValid3(String s) {
+		Map<Character, Character> map = Map.of('(', ')', '{', '}', '[', ']');
+		Deque<Character> stack = new ArrayDeque<>();
+
+		for(char c : s.toCharArray()){
+			if(map.containsKey(c)){
+				stack.push(c);
+			} else{
+				if(stack.isEmpty()) return false;
+				char opening = stack.pop();
+				if(c != map.get(opening)) return false;
+			}
+		}
+
+		return stack.isEmpty();
+	}
+
+	private static boolean isValid1(String s) {
 		Deque<Character> stack = new ArrayDeque<>();
 		Map<Character, Character> matching = Map.of(')', '(', ']', '[', '}', '{');
 
@@ -63,6 +79,20 @@ public class ValidParentheses {
 			}
 		}
 		// valid if all opened brackets are closed
+		return stack.isEmpty();
+	}
+
+	private static boolean isValid2(String s) {
+		Deque<Character> stack = new ArrayDeque<>();
+
+		for (int i=0; i<s.length(); i++) {
+			char c = s.charAt(i);
+			if (c == '(') stack.push(')');
+			else if (c == '[') stack.push(']');
+			else if (c == '{') stack.push('}');
+			else if (stack.isEmpty() || stack.pop() != c) return false;
+		}
+
 		return stack.isEmpty();
 	}
 }
