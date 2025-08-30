@@ -84,6 +84,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  674 |          Longest Continuous Increasing Subsequence           |                       Array                        |         [Java Code](src/main/java/easy/done/LongestContinuousSubsequence.java)         |
 |  680 |                     Valid Palindrome II                      |            Two Pointers, String, Greedy            |               [Java Code](src/main/java/easy/done/ValidPalindrome2.java)               |
 |  680 |              Valid Palindrome II (**Streams**)               |       Two Pointers, String, Greedy, Streams        |           [Java Code](src/main/java/easy/done/ValidPalindrome2Streams.java)            |
+|  682 |                        Baseball Game                         |                    Stack, Array                    |                 [Java Code](src/main/java/easy/done/BaseballGame.java)                 |
 |  733 |                          Flood Fill                          |              Array, DFS, BFS, Matrix               |                  [Java Code](src/main/java/easy/done/FloodFill.java)                   |
 |  766 |                       Toeplitz Matrix                        |                   Array, Matrix                    |                [Java Code](src/main/java/easy/done/ToeplitzMatrix.java)                |
 |  796 |                        Rotate String                         |                       String                       |                 [Java Code](src/main/java/easy/done/RotateString.java)                 |
