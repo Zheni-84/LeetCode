@@ -128,6 +128,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1634 |                      Buy Two Chocolates                      |                   Array, Sorting                   |               [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)               |
 | 1652 |                       Defuse the Bomb                        |                       Array                        |                [Java Code](src/main/java/easy/done/DefuseTheBomb.java)                 |
 | 1662 |          Check If Two String Arrays are Equivalent           |                String, Two Pointers                |        [Java Code](src/main/java/easy/CheckIfTwoStringArraysAreEquivalent.java)        |
+| 1700 |            Number of Students Unable to Eat Lunch            |                 Queue, Simulation                  |       [Java Code](src/main/java/easy/done/NumberOfStudentsUnableToEatLunch.java)       |
 | 1732 |                  Find the Highest Altitude                   |                 Array, Prefix Sum                  |             [Java Code](src/main/java/easy/done/FindHighestAltitude.java)              |
 | 1758 |      Minimum Changes To Make Alternating Binary String       |                   String, Greedy                   | [Java Code](src/main/java/easy/done/MinimumChangesToMakeAlternatingBinaryString.java)  |
 | 1763 |                    Longest Nice Substring                    |                String, Brute Force                 |             [Java Code](src/main/java/easy/done/LongestNiceSubstring.java)             |
