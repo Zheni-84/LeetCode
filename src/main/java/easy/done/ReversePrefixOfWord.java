@@ -1,10 +1,13 @@
 package easy.done;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * LeetCode Problem: 2000. Reverse Prefix of Word
  * Space: O(n)
  * Time: O(n)
- * Topics: String
+ * Topics: String, Stack, Stream
  * You are given a 0-indexed string word and a character ch.
  * Reverse the segment of word that starts at index 0 and ends at the index of the first occurrence of ch (inclusive).
  * If the character ch does not exist in word, do nothing.
@@ -20,9 +23,29 @@ public class ReversePrefixOfWord {
 
 	public static void main(String[] args) {
 		System.out.println(reversePrefix("abcdefd", 'd')); // Output: "dcbaefd"
-		System.out.println(reversePrefix("xyxzxe", 'z')); // Output: "zxyxxe"
+		System.out.println(reversePrefixStack("xyxzxe", 'z')); // Output: "zxyxxe"
 		System.out.println(reversePrefix("abcd", 'z')); // Output: "abcd"
 		System.out.println(reversePrefixStream("abcdefd", 'd')); // Output: "dcbaefd"
+	}
+
+	private static String reversePrefixStack(String word, char ch) {
+		int index = word.indexOf(ch);
+		if(index == -1) return word;
+
+		Deque<Character> stack = new ArrayDeque<>();
+		for(int i = 0; i <= index; i++){
+			stack.push(word.charAt(i));
+		}
+
+		StringBuilder result = new StringBuilder();
+
+		while(!stack.isEmpty()){
+			result.append(stack.pop());
+		}
+
+		result.append(word.substring(index+1));
+
+		return result.toString();
 	}
 
 	private static String reversePrefix(String word, char ch) {
