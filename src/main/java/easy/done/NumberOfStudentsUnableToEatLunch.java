@@ -32,10 +32,39 @@ public class NumberOfStudentsUnableToEatLunch {
 		System.out.println(countStudentsCounters(students2, sandwiches2));
 	}
 
+	private static int countStudentsBrute(int[] students, int[] sandwiches) {
+		Queue<Integer> queue = new LinkedList<>();
+		for(int s: students) queue.offer(s);
+
+		int index = 0; // sandwich pointer
+		while(!queue.isEmpty() && index < sandwiches.length){
+			int size = queue.size();
+			boolean served = false;
+
+			// try to serve each student in the queue once
+			// if none can eat the top sandwich, we are done
+			// otherwise, continue to the next sandwich
+			for(int i = 0; i < size; i++){
+				int student = queue.poll();
+				if(student == sandwiches[index]){
+					index++;
+					served = true;
+					break; // sandwich eaten, stop this round
+				}else{
+					queue.offer(student);
+				}
+			}
+			// no student wanted to eat the top sandwich
+			if(!served) break;
+		}
+
+		return queue.size();
+	}
+
 	// brute force solution using queue and stack simulation
 	// Time Complexity: O(n^2) in the worst case, where n is the number of students.
 	// Space Complexity: O(n) for the queue used to simulate the students
-	private static int countStudentsBrute(int[] students, int[] sandwiches) {
+	private static int countStudentsBrute2(int[] students, int[] sandwiches) {
 		Queue<Integer> queue = new LinkedList<>();
 		for (int s : students)
 			queue.offer(s);
