@@ -32,6 +32,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |   66 |                           Plus one                           |                    Array, Math                     |                   [Java Code](src/main/java/easy/done/PlusOne.java)                    |
 |   67 |                      Add Binary Strings                      |           String, Math, Bit Manipulation           |               [Java Code](src/main/java/easy/done/AddBinaryStrings.java)               |
 |   94 |                Binary Tree Inorder Traversal                 |       Tree, Depth-First Search, Binary Tree        |          [Java Code](src/main/java/easy/done/BinaryTreeInorderTraversal.java)          |
+|  103 |           Binary Tree Zigzag Level Order Traversal           |                     Tree, BFS                      |               [Java Code](src/main/java/easy/done/ZigzagLevelOrder.java)               |
 |  144 |                Binary Tree Preorder Traversal                |               Tree, DFS, Binary Tree               |         [Java Code](src/main/java/easy/done/BinaryTreePreorderTraversal.java)          |
 |  145 |               Binary Tree Postorder Traversal                |               Tree, DFS, Binary Tree               |         [Java Code](src/main/java/easy/done/BinaryTreePostorderTraversal.java)         |
 |  100 |                          Same Tree                           |                  Tree, Recursion                   |                   [Java Code](src/main/java/easy/done/SameTree.java)                   |
@@ -146,6 +147,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2373 |               Largest Local Values in a Matrix               |                   Array, Matrix                    |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
 | 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |               String, Sliding Window               |  [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)   |
 | 2678 |                  Number of Senior Citizens                   |                   String, Array                    |            [Java Code](src/main/java/easy/done/NumberOfSeniorCitizens.java)            |
+| 2073 |                  Time Needed to Buy Tickets                  |           Array, Simulation, Queue, Math           |            [Java Code](src/main/java/easy/done/TimeNeededToBuyTickets.java)            |
 | 2760 |           Longest Even Odd Subarray with Threshold           |               Array, Sliding Window                |     [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)      |
 | 3110 |                      Score of a String                       |                       String                       |                [Java Code](src/main/java/easy/done/ScoreOfAString.java)                |
 
