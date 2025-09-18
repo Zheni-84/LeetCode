@@ -108,6 +108,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  993 |                    Cousins in Binary Tree                    |                      BST, BFS                      |             [Java Code](src/main/java/easy/done/CousinsInBinaryTree.java)              |
 | 1002 |                    Find Common Characters                    |                Array, HashMap Table                |             [Java Code](src/main/java/easy/done/FindCommonCharacters.java)             |
 | 1022 |              Sum of Root To Leaf Binary Numbers              |                      BST, DFS                      |         [Java Code](src/main/java/easy/done/SumOfRootToLeafBinaryNumbers.java)         |
+| 1046 |                      Last Stone Weight                       |                Array, Heap, Greedy                 |               [Java Code](src/main/java/easy/done/LastStoneWeight.java)                |
 | 1050 |                        Height Checker                        |                   Array, Sorting                   |                [Java Code](src/main/java/easy/done/HeightChecker.java)                 |
 | 1071 |              Greatest Common Divisor of Strings              |                    String, Math                    |        [Java Code](src/main/java/easy/done/GreatestCommonDivisorOfStrings.java)        |
 | 1154 |                       Day of the Year                        |                    String, Math                    |                 [Java Code](src/main/java/easy/done/DayOfTheYear.java)                 |
@@ -118,6 +119,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1422 |            Maximum Score After Splitting a String            |                 String, Prefix Sum                 |       [Java Code](src/main/java/easy/done/MaximumScoreAfterSplittingString.java)       |
 | 1436 |                       Destination City                       |                 Hash Table, String                 |               [Java Code](src/main/java/easy/done/DestinationCity.java)                |
 | 1446 |                    Consecutive Characters                    |                       String                       |            [Java Code](src/main/java/easy/done/ConsecutiveCharacters.java)             |
+| 1464 |         Maximum Product of Two Elements in an Array          |                Array, Sorting, Heap                |      [Java Code](src/main/java/easy/done/MaximumProductOfTwoElementsInArray.java)      |
 | 1491 | Average Salary Excluding the Minimum <br/>and Maximum Salary |                   Array, Sorting                   |     [Java Code](src/main/java/easy/done/AverageSalaryExcludingMinimumMaximum.java)     |
 | 1496 |                        Path Crossing                         |                 Hash Table, String                 |                 [Java Code](src/main/java/easy/done/PathCrossing.java)                 |
 | 1524 |            Largest 3-Same-Digit Number in String             |                       String                       |       [Java Code](src/main/java/easy/done/Largest3SameDigitNumberInString.java)        |
