@@ -27,7 +27,11 @@ public class LargestNumberAfterDigitSwapsByParity {
 
 		num = 65875;
 		// Output: 87655
-		System.out.println("Largest Number After Digit Swaps By Parity: " + largestInteger(num));
+		System.out.println("Largest Number After Digit Swaps By Parity: " + largestIntegerHeap(num));
+
+		num = 1234;
+		// Output: 3412
+		System.out.println("Largest Number After Digit Swaps By Parity: " + largestIntegerStreamHeap(num));
 	}
 
 	private static int largestIntegerHeap(int num) {

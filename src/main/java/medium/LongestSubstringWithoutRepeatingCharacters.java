@@ -99,7 +99,6 @@ public class LongestSubstringWithoutRepeatingCharacters {
 		}
 
 		return maxLength;
-
 	}
 
 	// Sliding window approach using a hash set to track characters in the current substring
@@ -130,6 +129,4 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
 		return maxLength;
 	}
-
-
 }
