@@ -37,7 +37,7 @@ LuckyNumbersInMatrix {
 	private static List<Integer> luckyNumbers(int[][] matrix) {
 		int n = matrix[0].length;
 
-		// Step 1: Find row minimum and store them (valuem colIndex))
+		// Step 1: Find row minimum and store them (value, colIndex)
 		List<int[]> rowMins = new ArrayList<>();
 		for (int[] ints : matrix) {
 			int minVal = ints[0];
@@ -51,7 +51,7 @@ LuckyNumbersInMatrix {
 			rowMins.add(new int[] { minVal, minCol });
 		}
 
-		//Step 2 : FInd column maximums
+		//Step 2 : Find column maximums
 		int[] colMaxes = new int[n];
 		Arrays.fill(colMaxes, Integer.MIN_VALUE);
 		for (int j = 0; j < n; j++) {

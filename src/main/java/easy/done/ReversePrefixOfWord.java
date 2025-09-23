@@ -64,6 +64,9 @@ public class ReversePrefixOfWord {
 		int idx = word.indexOf(ch);
 		return idx == -1
 				? word
-				: new StringBuilder(word.substring(0, idx + 1)).reverse().append(word.substring(idx + 1)).toString();
+				: new StringBuilder(word.substring(0, idx + 1))
+				.reverse()
+				.append(word.substring(idx + 1))
+				.toString();
 	}
 }

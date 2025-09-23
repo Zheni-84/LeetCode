@@ -40,8 +40,8 @@ public class NumberOfSeniorCitizens {
 		for (String detail : details) {
 			// Extract the age from the string
 			int age = Integer.parseInt(detail.substring(11, 13));
-			// Check if the age is 60 or older
-			if (age >= 60) {
+			// Check if the age is strictly over 60 years old
+			if (age > 60) {
 				count++;
 			}
 		}
