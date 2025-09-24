@@ -24,18 +24,33 @@ public class IsomorphicStrings {
 	public static void main(String[] args) {
 		String s1 = "egg";
 		String t1 = "add";
-		System.out.println("Are \"" + s1 + "\" and \"" + t1 + "\" isomorphic? " + isIsomorphic(s1, t1)); // true
+		System.out.println("Are \"" + s1 + "\" and \"" + t1 + "\" isomorphic? " + isIsomorphic1(s1, t1)); // true
 
 		String s2 = "foo";
 		String t2 = "bar";
-		System.out.println("Are \"" + s2 + "\" and \"" + t2 + "\" isomorphic? " + isIsomorphic(s2, t2)); // false
+		System.out.println("Are \"" + s2 + "\" and \"" + t2 + "\" isomorphic? " + isIsomorphic1(s2, t2)); // false
 
 		String s3 = "paper";
 		String t3 = "title";
-		System.out.println("Are \"" + s3 + "\" and \"" + t3 + "\" isomorphic? " + isIsomorphic(s3, t3)); // true
+		System.out.println("Are \"" + s3 + "\" and \"" + t3 + "\" isomorphic? " + isIsomorphic2(s3, t3)); // true
 	}
 
-	private static boolean isIsomorphic(String s, String t) {
+	private static boolean isIsomorphic1(String s, String t) {
+		Map<Character, Character> st = new HashMap<>();
+		Map<Character, Character> ts = new HashMap<>();
+
+		for (int i = 0; i < s.length(); i++) {
+			char c1 = s.charAt(i), c2 = t.charAt(i);
+
+			st.putIfAbsent(c1, c2);
+			ts.putIfAbsent(c2, c1);
+
+			if (st.get(c1) != c2 || ts.get(c2) != c1) return false;
+		}
+		return true;
+	}
+
+	private static boolean isIsomorphic2(String s, String t) {
 
 		if(s.length()!=t.length()){
 			return false;
