@@ -155,6 +155,8 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2373 |               Largest Local Values in a Matrix               |                   Array, Matrix                    |          [Java Code](src/main/java/easy/done/LargestLocalValuesInMatrix.java)          |
 | 2379 |      Minimum Recolors to Get K Consecutive Black Blocks      |               String, Sliding Window               |  [Java Code](src/main/java/easy/done/MinimumRecolorsForKConsecutiveBlackBlocks.java)   |
 | 2500 |              Delete Greatest Value in Each Row               |               Matrix, Sorting, Heap                |         [Java Code](src/main/java/easy/done/DeleteGreatestValueInEachRow.java)         |
+| 2558 |               Take Gifts From the Richest Pile               |                Array, Greedy, Heap                 |         [Java Code](src/main/java/easy/done/TakeGiftsFromTheRichestPile.java)          |
+| 2594 |                     Minimum Number Game                      |                Array, Greedy, Heap                 |              [Java Code](src/main/java/easy/done/MinimumNumberGame.java)               |
 | 2678 |                  Number of Senior Citizens                   |                   String, Array                    |            [Java Code](src/main/java/easy/done/NumberOfSeniorCitizens.java)            |
 | 2073 |                  Time Needed to Buy Tickets                  |           Array, Simulation, Queue, Math           |            [Java Code](src/main/java/easy/done/TimeNeededToBuyTickets.java)            |
 | 2760 |           Longest Even Odd Subarray with Threshold           |               Array, Sliding Window                |     [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)      |
@@ -170,6 +172,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |   3 | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window | [Java Code](src/main/java/medium/LongestSubstringWithoutRepeatingCharacters.java) |
 | 150 |        Evaluate Reverse Polish Notation        |            Stack, Array            |       [Java Code](src/main/java/medium/EvaluateReversePolishNotation.java)        |
 | 287 |           Find the Duplicate Number            | Array, Two Pointers, Binary Search |               [Java Code](src/main/java/medium/FindDuplicate.java)                |
+| 384 |                Shuffle an Array                |      Array, Math, Randomized       |               [Java Code](src/main/java/medium/ShuffleAnArray.java)               |
 
 ---
 
