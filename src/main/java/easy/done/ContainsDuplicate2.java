@@ -1,7 +1,9 @@
 package easy.done;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * LeetCode Problem 219 - Contains Duplicate II
@@ -19,15 +21,50 @@ import java.util.Map;
 public class ContainsDuplicate2 {
 
 	public static void main(String[] args) {
-		// Example usage
 		int[] nums = { 1, 2, 3, 1 };
 		int k = 3;
-		//boolean result = containsNearbyDuplicateBruteForce(nums, k);
-		boolean result = containsNearbyDuplicate(nums, k);
-		System.out.println("Contains nearby duplicate: " + result); // Output: true
+		// Output: true
+		// Explanation: There are two 1's in the array, and their indices are 0 and 3. The absolute difference between their indices is |0 - 3| = 3, which is less than or equal to k.
+		System.out.println("Contains Duplicate II: " + containsNearbyDuplicateSet(nums, k));
+
+		nums = new int[] { 1, 0, 1, 1 };
+		k = 1;
+		// Output: true
+		// Explanation: There are two 1's in the array, and their indices are 0 and 2. The absolute difference between their indices is |0 - 2| = 2, which is greater than k.
+		System.out.println("Contains Duplicate II: " + containsNearbyDuplicateMap(nums, k));
+
+		nums = new int[] { 1, 2, 3, 1, 2, 3 };
+		k = 2;
+		// Output: false
+		// Explanation: There are no two distinct indices i and j in the array such that nums[i] == nums[j] and the absolute difference between i and j is less than or equal to k.
+		System.out.println("Contains Duplicate II: " + containsNearbyDuplicateBruteForce(nums, k));
 	}
 
-	private static boolean containsNearbyDuplicate(int[] nums, int k) {
+	// Sliding window approach using a HashSet to maintain a window of size k
+	// This approach has a time complexity of O(n) and space complexity of O(min(n, k))
+	// Time Complexity: O(n)
+	// Space Complexity: O(min(n, k))
+	private static boolean containsNearbyDuplicateSet(int[] nums, int k) {
+		Set<Integer> window = new HashSet<>();
+
+		for (int i = 0; i < nums.length; i++) {
+			if (window.contains(nums[i]))
+				return true;
+
+			window.add(nums[i]);
+
+			if (window.size() > k)
+				window.remove(nums[i - k]);
+		}
+
+		return false;
+	}
+
+	// Alternative solution using a HashMap to store the last seen index of each number
+	// This approach also has a time complexity of O(n) and space complexity of O(n)
+	// Time Complexity: O(n)
+	// Space Complexity: O(n)
+	private static boolean containsNearbyDuplicateMap(int[] nums, int k) {
 		// Create a HashMap to store the last index of each number
 		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
@@ -45,6 +82,10 @@ public class ContainsDuplicate2 {
 		return false;
 	}
 
+	// Brute force approach checking all pairs within distance k
+	// This approach has a time complexity of O(n*k) and space complexity of O(1)
+	// Time Complexity: O(n*k)
+	// Space Complexity: O(1)
 	private static boolean containsNearbyDuplicateBruteForce(int[] nums, int k) {
 		int i = 0;
 		int j = 1;
@@ -67,6 +108,7 @@ public class ContainsDuplicate2 {
 				j++;
 			}
 		}
+
 		// we did not find any duplicates within the given distance
 		return false;
 	}
