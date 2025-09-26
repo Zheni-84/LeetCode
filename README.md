@@ -48,6 +48,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  169 |                       Majority Element                       |   Array, Hash Table, Divide and Conquer, Sorting   |               [Java Code](src/main/java/easy/done/MajorityElement.java)                |
 |  202 |                         Happy Number                         |           Hash Table, Math, Two Pointers           |                 [Java Code](src/main/java/easy/done/HappyNumber.java)                  |
 |  205 |                      Isomorphic Strings                      |                 String, Hash Table                 |              [Java Code](src/main/java/easy/done/IsomorphicStrings.java)               |
+|  217 |                      Contains Duplicate                      |                   Array, HashSet                   |              [Java Code](src/main/java/easy/done/ContainsDuplicate.java)               |
 |  219 |                    Contains Duplicate II                     |                   Array, HashMap                   |              [Java Code](src/main/java/easy/done/ContainsDuplicate2.java)              |
 |  222 |                  Count Complete Tree Nodes                   |          Binary Tree, Height Calculation           |            [Java Code](src/main/java/easy/done/CountCompleteTreeNodes.java)            |
 |  242 |                        Valid Anagram                         |            String, Hash Table, Sorting             |                 [Java Code](src/main/java/easy/done/ValidAnagram.java)                 |
