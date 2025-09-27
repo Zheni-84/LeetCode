@@ -2,6 +2,7 @@ package easy.done;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * LeetCode Problem 290: Word Pattern
@@ -105,6 +106,89 @@ public class WordPattern {
 			}
 		}
 
+		return true;
+	}
+
+	private static boolean wordPattern2(String pattern, String s) {
+		String[] words = s.split(" ");
+		if (pattern.length() != words.length) {
+			return false;
+		}
+
+		Map<Character, String> charToWord = new HashMap<>();
+		Map<String, Character> wordToChar = new HashMap<>();
+
+		for (int i = 0; i < pattern.length(); i++) {
+			char c = pattern.charAt(i);
+			String w = words[i];
+
+			// Compare existing mapping directly
+			String mappedWord = charToWord.getOrDefault(c, w);
+			Character mappedChar = wordToChar.getOrDefault(w, c);
+
+			if (!mappedWord.equals(w) || mappedChar != c) {
+				return false;
+			}
+
+			// Create new mapping if absent
+			charToWord.put(c, w);
+			wordToChar.put(w, c);
+		}
+		return true;
+	}
+
+	public boolean wordPattern(String pattern, String s) {
+		String[] words = s.split(" ");
+		if(pattern.length() != words.length) return false;
+
+		Map<Character, String> charToWord = new HashMap<>();
+		Map<String, Character> wordToChar = new HashMap<>();
+		for(int i = 0; i < pattern.length(); i++){
+			char ch = pattern.charAt(i);
+			String word = words[i];
+
+			charToWord.putIfAbsent(ch, word);
+			wordToChar.putIfAbsent(word, ch);
+
+			if( !charToWord.get(ch).equals(word) || wordToChar.get(word) != ch){
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	private static boolean wordPattern3(String pattern, String s) {
+		String[] words = s.split(" ");
+		if (pattern.length() != words.length) {
+			return false;
+		}
+
+		Map<Object, Integer> seen = new HashMap<>();
+
+		for (int i = 0; i < pattern.length(); i++) {
+			char c = pattern.charAt(i);
+			String w = words[i];
+
+			// If the previous index of char and word differ, mapping is broken
+			// We use Object as the key type to allow both Character and String keys
+			// The put method returns the previous value associated with the key, or null if there was no mapping
+			// By comparing the results of the two put calls, we can determine if the mappings are consistent
+			// If they are not equal, it means one was seen before the other, breaking the bijection
+			// We use i (the current index) as the value to store the last seen index
+			// This way, both the character and the word will have the same last seen index if they are correctly mapped
+			// If they are not correctly mapped, their last seen indices will differ
+			// This approach ensures that each character maps to one unique word and vice versa
+			// It effectively checks the bijection property
+			// Example: pattern = "abba", s = "dog cat cat dog"
+			// Iteration 0: c = 'a', w = "dog" -> seen.put('a', 0) = null, seen.put("dog", 0) = null -> equal
+			// Iteration 1: c = 'b', w = "cat" -> seen.put('b', 1) = null, seen.put("cat", 1) = null -> equal
+			// Iteration 2: c = 'b', w = "cat" -> seen.put('b', 2) = 1, seen.put("cat", 2) = 1 -> equal
+			// Iteration 3: c = 'a', w = "dog" -> seen.put('a', 3) = 0, seen.put("dog", 3) = 0 -> equal
+			if (!Objects.equals(seen.put(c, i), seen.put(w, i))) {
+				return false;
+			}
+		}
 		return true;
 	}
 }
