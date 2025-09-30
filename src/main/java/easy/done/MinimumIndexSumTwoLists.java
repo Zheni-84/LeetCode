@@ -54,4 +54,28 @@ public class MinimumIndexSumTwoLists {
 
 		return result.toArray(new String[0]);
 	}
+
+	public String[] findRestaurant2(String[] list1, String[] list2) {
+		Map<String, Integer> map = new HashMap<>();
+		for(int i = 0; i < list1.length ; i++){
+			map.put(list1[i], i);
+		}
+
+		int min = Integer.MAX_VALUE;
+		List<String> result = new ArrayList<>();
+		for(int i = 0; i < list2.length; i++){
+			String word2 = list2[i];
+			if(map.containsKey(word2)){
+				int minCurr = i + map.get(word2);
+				if(minCurr < min){
+					result.clear();
+					result.add(word2);
+				} if(minCurr == min){
+					result.add(word2);
+				}
+			}
+		}
+
+		return result.toArray(new String[0]);
+	}
 }
