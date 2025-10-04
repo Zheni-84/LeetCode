@@ -1,8 +1,6 @@
 package easy.done;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * LeetCode Problem 1002 - Find Common Characters
@@ -22,8 +20,9 @@ public class FindCommonCharacters {
 		String[] words1 = {"bella", "label", "roller"};
 		String[] words2 = {"cool", "lock", "cook"};
 
-		System.out.println(Arrays.toString(findCommonCharacters1(words1))); // Output: ["e", "l", "l"]
-		System.out.println(findCommonCharacters2(words2)); // Output: ["c", "o"]
+		//System.out.println(Arrays.toString(findCommonCharacters1(words1))); // Output: ["e", "l", "l"]
+		System.out.println(findCommonCharacters3(words1)); // Output: ["e", "l", "l"]
+		System.out.println(findCommonCharacters3(words2)); // Output: ["c", "o"]
 	}
 	private static String[] findCommonCharacters1(String[] words) {
 		if (words == null || words.length == 0) {
@@ -89,6 +88,42 @@ public class FindCommonCharacters {
 				// we add it to the result list as a string.
 				// We convert the index back to a character by adding 'a' to it.
 				result.add(String.valueOf((char)(i + 'a')));
+			}
+		}
+
+		return result;
+	}
+
+	private static List<String> findCommonCharacters3(String[] words) {
+		Map<Character, Integer> common = new HashMap<>();
+		// Initialize freq map with first word
+		for(char c : words[0].toCharArray()){
+			common.put(c, common.getOrDefault(c, 0) + 1);
+		}
+
+		// Intersect with remainig words
+		for(int i = 1; i < words.length; i++){
+			Map<Character, Integer> count = new HashMap<>();
+			for(char c : words[i].toCharArray()){
+				count.put(c, count.getOrDefault(c, 0) + 1);
+			}
+
+			//Update common map - keep only chars that repeat
+			Set<Character> commonSet = new HashSet<>(common.keySet());
+			for(char c : commonSet){
+				if(count.containsKey(c)){
+					common.put(c, Math.min(common.get(c), count.get(c)));
+				} else
+					//remove if not in current word
+					common.remove(c);
+			}
+		}
+
+		// Build result
+		List<String> result = new ArrayList<>();
+		for(Map.Entry<Character, Integer> entry : common.entrySet()){
+			for(int i = 0; i < entry.getValue(); i++){
+				result.add(String.valueOf(entry.getKey()));
 			}
 		}
 
