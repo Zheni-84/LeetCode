@@ -115,6 +115,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1046 |                      Last Stone Weight                       |                Array, Heap, Greedy                 |               [Java Code](src/main/java/easy/done/LastStoneWeight.java)                |
 | 1050 |                        Height Checker                        |                   Array, Sorting                   |                [Java Code](src/main/java/easy/done/HeightChecker.java)                 |
 | 1071 |              Greatest Common Divisor of Strings              |                    String, Math                    |        [Java Code](src/main/java/easy/done/GreatestCommonDivisorOfStrings.java)        |
+| 1122 |                     Relative Sort Array                      |    Array, HashMap Table, Sorting, Counting Sort    |              [Java Code](src/main/java/easy/done/RelativeSortArray.java)               |
 | 1154 |                       Day of the Year                        |                    String, Math                    |                 [Java Code](src/main/java/easy/done/DayOfTheYear.java)                 |
 | 1160 |         Find Words That Can Be Formed by Characters          |                Array, HashMap Table                |     [Java Code](src/main/java/easy/done/FindWordsThatCanBeFormedByCharacters.java)     |
 | 1295 |           Find Numbers with Even Number of Digits            |                  String, Pointers                  |        [Java Code](src/main/java/easy/done/NumbersWithEvenNumberOfDigits.java)         |
