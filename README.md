@@ -150,6 +150,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2037 |           Minimum Number of Moves to Seat Everyone           |                   Array, Sorting                   |        [Java Code](src/main/java/easy/done/MinimumNumberMovesSeatEveryone.java)        |
 | 2099 |      Find Subsequence of Length K With the Largest Sum       |                Array, Sorting, Heap                |    [Java Code](src/main/java/easy/done/FindSubsequenceOfLengthKWithLargestSum.java)    |
 | 2108 |          Find First Palindromic String in the Array          |                   Array, String                    |     [Java Code](src/main/java/easy/done/FindFirstPalindromicStringInTheArray.java)     |
+| 2215 |              Find the Difference of Two Arrays               |      Array, Hash Table, Two Pointers, Sorting      |         [Java Code](src/main/java/easy/done/FindTheDifferenceOfTwoArrays.java)         |
 | 2231 |          Largest Number After Digit Swaps by Parity          |                Math, Sorting, Heap                 |     [Java Code](src/main/java/easy/done/LargestNumberAfterDigitSwapsByParity.java)     |
 | 2269 |                  Find K-Beauty of a Number                   |                    String, Math                    |             [Java Code](src/main/java/easy/done/FindKBeautyOfNumber.java)              |
 | 2331 |                 Evaluate Boolean Binary Tree                 |                      BST, DFS                      |          [Java Code](src/main/java/easy/done/EvaluateBooleanBinaryTree.java)           |
