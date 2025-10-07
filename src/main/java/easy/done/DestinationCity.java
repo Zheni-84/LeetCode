@@ -15,6 +15,7 @@ import java.util.Set;
  * Example:
  * Input: paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
  * Output: "Sao Paulo"
+ *
  * Hint: Use a set to track all starting cities and then find the one that is not in the set.
  * http://leetcode.com/problems/destination-city/
  */
@@ -26,12 +27,33 @@ public class DestinationCity {
 				List.of("New York", "Lima"),
 				List.of("Lima", "Sao Paulo")
 		);
-		DestinationCity solution = new DestinationCity();
-		String destination = solution.destCity(paths);
-		System.out.println("Destination City: " + destination); // Output: Sao Paulo
+
+		String destination = destCitySet(paths);
+		System.out.println("Destination City: " + destination); // Output: "Sao Paulo"
+		// Another approach
+		String destination2 = destCity(paths);
+		System.out.println("Destination City: " + destination2); // Output: "Sao Paulo"
 	}
 
-	public String destCity(List<List<String>> paths) {
+	// Using Sets to find the destination city
+	// Time Complexity: O(n)
+	// Space Complexity: O(n)
+	private static String destCitySet(List<List<String>> paths) {
+		Set<String> from = new HashSet<>();
+		Set<String> to = new HashSet<>();
+
+		for(List<String> dest : paths){
+			from.add(dest.get(0));
+			to.add(dest.get(1));
+		}
+
+		Set<String> diff = new HashSet<>(to);
+		diff.removeAll(from);
+
+		return diff.iterator().next();
+	}
+
+	private static String destCity(List<List<String>> paths) {
 		Set<String> starts = new HashSet<>();
 		for (List<String> path : paths) {
 			starts.add(path.get(0));
