@@ -134,6 +134,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1614 |           Maximum Nesting Depth of the Parentheses           |                       String                       |       [Java Code](src/main/java/easy/done/MaximumNestingDepthOfParentheses.java)       |
 | 1629 |                         Slowest Key                          |                   String, Array                    |                  [Java Code](src/main/java/easy/done/SlowestKey.java)                  |
 | 1634 |                      Buy Two Chocolates                      |                   Array, Sorting                   |               [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)               |
+| 1636 |              Sort Array by Increasing Frequency              |             Array, Hash Table, Sorting             |        [Java Code](src/main/java/easy/done/SortArrayByIncreasingFrequency.java)        |
 | 1652 |                       Defuse the Bomb                        |                       Array                        |                [Java Code](src/main/java/easy/done/DefuseTheBomb.java)                 |
 | 1662 |          Check If Two String Arrays are Equivalent           |                String, Two Pointers                |        [Java Code](src/main/java/easy/CheckIfTwoStringArraysAreEquivalent.java)        |
 | 1700 |            Number of Students Unable to Eat Lunch            |                 Queue, Simulation                  |       [Java Code](src/main/java/easy/done/NumberOfStudentsUnableToEatLunch.java)       |
