@@ -144,6 +144,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1768 |                  Merge Strings Alternately                   |                   Array, Sorting                   |               [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)               |
 | 1773 |                 Count Items Matching a Rule                  |                   Array, String                    |            [Java Code](src/main/java/easy/done/CountItemsMatchingRule.java)            |
 | 1876 |      Substrings of Size Three with Distinct Characters       |          String, Sliding Window, Hash Set          |    [Java Code](src/main/java/easy/done/SubstringsSizeThreeDistinctCharacters.java)     |
+| 1897 |      Redistribute Characters to Make All Strings Equal       |              String, Hash Table, Math              | [Java Code](src/main/java/easy/done/RedistributeCharactersToMakeAllStringsEqual.java)  |
 | 1903 |                 Largest Odd Number in String                 |                       String                       |           [Java Code](src/main/java/easy/done/LargestOddNumberInString.java)           |
 | 1913 |         Maximum Product Difference Between Two Pairs         |                   Array, Sorting                   |   [Java Code](src/main/java/easy/done/MaximumProductDifferenceBetweenTwoPairs.java)    |
 | 1984 |  Minimum Difference Between Highest and Lowest of K Scores   |           Array, Sorting, Sliding window           | [Java Code](src/main/java/easy/done/MinimumDifferenceBetweenHighestLowestKScores.java) |
