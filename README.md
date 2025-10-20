@@ -28,9 +28,11 @@ This repository contains my solutions to LeetCode problems in Java.
 |   14 |                    Longest Common Prefix                     | String, Array, Divide and Conquer, String Matching |               [Java Code](src/main/java/easy/done/LongestCommonPrefix.java)               |
 |   20 |                      Valid Parentheses                       |             Stack, String, Hash Table              |                [Java Code](src/main/java/easy/done/ValidParentheses.java)                 |
 |   28 |      Find the Index of the First Occurrence in a String      |       String, String Matching, Two Pointers        |       [Java Code](src/main/java/easy/done/FindIndexOfFirstOccurrenceInString.java)        |
+|   35 |                    Search Insert Position                    |                Array, Binary Search                |              [Java Code](src/main/java/easy/done/SearchInsertPosition.java)               |
 |   58 |                     Length of Last Word                      |              String, String Matching               |                [Java Code](src/main/java/easy/done/LengthOfLastWord.java)                 |
 |   66 |                           Plus one                           |                    Array, Math                     |                     [Java Code](src/main/java/easy/done/PlusOne.java)                     |
 |   67 |                      Add Binary Strings                      |           String, Math, Bit Manipulation           |                [Java Code](src/main/java/easy/done/AddBinaryStrings.java)                 |
+|   69 |                           Sqrt(x)                            |                Math, Binary Search                 |                      [Java Code](src/main/java/easy/done/SqrtX.java)                      |
 |   94 |                Binary Tree Inorder Traversal                 |       Tree, Depth-First Search, Binary Tree        |           [Java Code](src/main/java/easy/done/BinaryTreeInorderTraversal.java)            |
 |  103 |           Binary Tree Zigzag Level Order Traversal           |                     Tree, BFS                      |                [Java Code](src/main/java/easy/done/ZigzagLevelOrder.java)                 |
 |  144 |                Binary Tree Preorder Traversal                |               Tree, DFS, Binary Tree               |           [Java Code](src/main/java/easy/done/BinaryTreePreorderTraversal.java)           |
@@ -53,8 +55,8 @@ This repository contains my solutions to LeetCode problems in Java.
 |  222 |                  Count Complete Tree Nodes                   |          Binary Tree, Height Calculation           |             [Java Code](src/main/java/easy/done/CountCompleteTreeNodes.java)              |
 |  242 |                        Valid Anagram                         |            String, Hash Table, Sorting             |                  [Java Code](src/main/java/easy/done/ValidAnagram.java)                   |
 |  257 |                      Binary Tree Paths                       |            Binary Tree, DFS, Tree Paths            |                 [Java Code](src/main/java/easy/done/BinaryTreePaths.java)                 |
+|  268 |                        Missing Number                        |     Array, Hash Table, Sorting, Binary Search      |                  [Java Code](src/main/java/easy/done/MissingNumber.java)                  |
 |  290 |                         Word Pattern                         |                 String, Hash Table                 |                   [Java Code](src/main/java/easy/done/WordPattern.java)                   |
-|  382 |                    License Key Formatting                    |                       String                       |              [Java Code](src/main/java/easy/done/LicenseKeyFormatting.java)               |
 |  383 |                         Ransom Note                          |                 String, Hash Table                 |                   [Java Code](src/main/java/easy/done/RansomNote.java)                    |
 |  387 |              First Unique Character in a String              |           Index array, String, Counting            |          [Java Code](src/main/java/easy/done/FirstUniqueCharacterInString.java)           |
 |  392 |                        Is Subsequence                        |                Two Pointers, String                |                  [Java Code](src/main/java/easy/done/IsSubsequence.java)                  |
@@ -67,6 +69,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  455 |                        Assign Cookies                        |               Array, Sorting, Greedy               |                  [Java Code](src/main/java/easy/done/AssignCookies.java)                  |
 |  459 |                  Repeated Substring Pattern                  |                       String                       |            [Java Code](src/main/java/easy/done/RepeatedSubstringPattern.java)             |
 |  463 |                        Assign Cookies                        |              Array, DFS, BFS, Matrix               |                 [Java Code](src/main/java/easy/done/IslandPerimeter.java)                 |
+|  482 |                    License Key Formatting                    |                       String                       |              [Java Code](src/main/java/easy/done/LicenseKeyFormatting.java)               |
 |  495 |                       Teemo Attacking                        |                   Array, Greedy                    |                 [Java Code](src/main/java/easy/done/TeemoAttacking.java)                  |
 |  496 |                    Next Greater Element I                    |     Array, Hash Table, Stack, Monotonic Stack      |               [Java Code](src/main/java/easy/done/NextGreaterElement1.java)               |
 |  506 |                        Relative Ranks                        |       Array, Sorting, Heap (Priority Queue)        |                  [Java Code](src/main/java/easy/done/RelativeRanks.java)                  |
@@ -165,11 +168,13 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2594 |                     Minimum Number Game                      |                Array, Greedy, Heap                 |                [Java Code](src/main/java/easy/done/MinimumNumberGame.java)                |
 | 2678 |                  Number of Senior Citizens                   |                   String, Array                    |             [Java Code](src/main/java/easy/done/NumberOfSeniorCitizens.java)              |
 | 2073 |                  Time Needed to Buy Tickets                  |           Array, Simulation, Queue, Math           |             [Java Code](src/main/java/easy/done/TimeNeededToBuyTickets.java)              |
-| 2760 |           Longest Even Odd Subarray with Threshold           |               Array, Sliding Window                |      [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)        |
+| 2760 |           Longest Even Odd Subarray with Threshold           |               Array, Sliding Window                |       [Java Code](src/main/java/easy/done/LongestEvenOddSubarrayWithThreshold.java)       |
 | 3110 |                      Score of a String                       |                       String                       |                 [Java Code](src/main/java/easy/done/ScoreOfAString.java)                  |
 | 2053 |               Kth Distinct String in an Array                |             Array, Hash Table, String              |           [Java Code](src/main/java/easy/done/KthDistinctStringInAnArray.java)            |
 | 2068 |       Check Whether Two Strings are Almost Equivalent        |            String, Hash Table, Counting            |     [Java Code](src/main/java/easy/done/CheckWhetherTwoStringsAlmostEquivalent.java)      |
 | 2441 |    Largest Positive Integer That Exists With Its Negative    |                  Array, Hash Set                   | [Java Code](src/main/java/easy/done/LargestPositiveIntegerThatExistsWithItsNegative.java) |
+| 2540 |                     Minimum Common Value                     |      Array, Hash Table, Two Pointers, Sorting      |               [Java Code](src/main/java/easy/done/MinimumCommonValue.java)                |
+| 3005 |            Count Elements With Maximum Frequency             |            Array, Hash Table, Counting             |        [Java Code](src/main/java/easy/done/CountElementsWithMaximumFrequency.java)        |
 
 ---
 
