@@ -5,7 +5,7 @@ package easy.done;
  * Time Complexity: O(log(n) * log(n)), where n is the number of nodes in the tree.
  * Space Complexity: O(1), since we are using a constant amount of space.
  * Topic: Binary Tree, Height Calculation
- *
+ * <p>
  * This class provides a method to count the number of nodes in a complete binary tree.
  * The main method demonstrates the usage of the countNodes method.
  * The TreeNode class is a simple representation of a binary tree node.
@@ -25,6 +25,7 @@ public class CountCompleteTreeNodes {
 		int count = countNodes(root);
 		System.out.println("Count of complete tree nodes: " + count); // Output: 6
 	}
+
 	private static int countNodes(TreeNode root) {
 		if (root == null)
 			return 0;
@@ -58,9 +59,6 @@ public class CountCompleteTreeNodes {
 		int val;
 		TreeNode left;
 		TreeNode right;
-
-		TreeNode() {
-		}
 
 		TreeNode(int val) {
 			this.val = val;

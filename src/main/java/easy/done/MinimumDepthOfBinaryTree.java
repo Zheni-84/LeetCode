@@ -26,7 +26,21 @@ public class MinimumDepthOfBinaryTree {
 
 		int depth = minDepth(root);
 		System.out.println("Minimum Depth of Binary Tree: " + depth); // Output: 2
+
+		int depthRecursion = minDepthRecursion(root);
+		System.out.println("Minimum Depth of Binary Tree (Recursion): " + depthRecursion); // Output: 2
+
 	}
+
+	private static int minDepthRecursion(TreeNode root) {
+		if (root == null) return 0;
+
+		if (root.left == null) return 1 + minDepth(root.right);
+		if (root.right == null) return 1 + minDepth(root.left);
+
+		return 1 + Math.min(minDepth(root.left), minDepth(root.right));
+	}
+
 	private static int minDepth(TreeNode root) {
 		if (root == null)
 			return 0;

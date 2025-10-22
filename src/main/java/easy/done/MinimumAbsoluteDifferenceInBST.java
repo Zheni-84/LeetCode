@@ -36,19 +36,19 @@ public class MinimumAbsoluteDifferenceInBST {
 		return min;
 	}
 
-	private  static void inorder(TreeNode root) {
-		if (root == null) {
+	private  static void inorder(TreeNode node) {
+		if (node == null) {
 			return;
 		}
 
-		inorder(root.left);
+		inorder(node.left);
 		if (prev != null) {
-			min = Math.min(min, Math.abs(root.val - prev));
+			min = Math.min(min, Math.abs(node.val - prev));
 		}
 
-		prev = root.val;
+		prev = node.val;
 
-		inorder(root.right);
+		inorder(node.right);
 	}
 
 	private static int getMinimumDifference(TreeNode root) {

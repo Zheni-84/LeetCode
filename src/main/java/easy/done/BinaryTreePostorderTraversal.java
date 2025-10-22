@@ -13,6 +13,7 @@ import java.util.List;
  * This class provides methods to perform postorder traversal of a binary tree using an iterative approach.
  * The main method demonstrates the usage of the postorderTraversal method.
  * The TreeNode class is a simple representation of a binary tree node.
+ *
  * Hint: In postorder traversal, we visit the left subtree, then the right subtree, and finally the root node.
  * https://leetcode.com/problems/binary-tree-postorder-traversal/
  */
@@ -68,6 +69,9 @@ public class BinaryTreePostorderTraversal {
 		return result;
 	}
 
+	// Recursive approach for postorder traversal
+	// Time Complexity: O(n)
+	// Space Complexity: O(h) - height of the tree
 	private static List<Integer> postorderTraversalRecursion(TreeNode root) {
 		List<Integer> result = new ArrayList<>();
 		postorder(root, result);

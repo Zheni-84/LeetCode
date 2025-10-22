@@ -45,7 +45,7 @@ public class SumOfRootToLeafBinaryNumbers {
 			return currentSum;
 		}
 
-		// Recur for left and right subtrees
+		// Recurse for left and right subtrees
 		return dfs(node.left, currentSum) + dfs(node.right, currentSum);
 	}
 

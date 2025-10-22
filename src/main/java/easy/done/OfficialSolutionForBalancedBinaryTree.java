@@ -28,23 +28,41 @@ public class OfficialSolutionForBalancedBinaryTree {
 		root.left.left.left = new TreeNode(7);
 		root.left.left.right = new TreeNode(8);
 
-		boolean isBalanced = isBalanced(root);
+		boolean isBalanced = isBalanced1(root);
 		System.out.println("Is the binary tree balanced? " + isBalanced);
 	}
 
-	private static boolean isBalanced(TreeNode root) {
-		return height(root).isPresent();
+	private static boolean isBalanced1(TreeNode root) {
+		return height1(root) != -1;
 	}
 
-	private static Optional<Integer> height(TreeNode node) {
+	private static int height1(TreeNode node) {
+		if (node == null) return 0;
+
+		int left = height1(node.left);
+		if (left == -1) return -1; // left subtree not balanced
+
+		int right = height1(node.right);
+		if (right == -1) return -1; // right subtree not balanced
+
+		if (Math.abs(left - right) > 1) return -1; // current node not balanced
+
+		return Math.max(left, right) + 1;
+	}
+
+	private static boolean isBalanced2(TreeNode root) {
+		return height2(root).isPresent();
+	}
+
+	private static Optional<Integer> height2(TreeNode node) {
 		if (node == null)
 			return Optional.of(0);
 
-		var leftHeight = height(node.left);
+		var leftHeight = height2(node.left);
 		if (leftHeight.isEmpty())
 			return Optional.empty(); // left not balanced
 
-		var rightHeight = height(node.right);
+		var rightHeight = height2(node.right);
 		if (rightHeight.isEmpty())
 			return Optional.empty(); // right not balanced
 
