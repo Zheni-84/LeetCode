@@ -53,13 +53,16 @@ public class BackspaceStringCompare {
 
 		while (i >= 0 || j >= 0) {
 			while (i >= 0) {
+				// first we count how many backspaces we have
 				if (s.charAt(i) == '#') {
 					skipS++;
 					i--;
+					// for each backspace, we skip a character
 				} else if (skipS > 0) {
 					skipS--;
 					i--;
 				} else {
+					// at i we have found a valid character
 					break;
 				}
 			}
@@ -76,16 +79,19 @@ public class BackspaceStringCompare {
 				}
 			}
 
+			// now we can compare the found valid characters
 			if (i >= 0 && j >= 0) {
 				if (s.charAt(i) != t.charAt(j)) {
 					return false;
 				}
 			} else {
+				// if one of the strings is exhausted while the other is not
 				if (i >= 0 || j >= 0) {
 					return false;
 				}
 			}
 
+			// move to the next character
 			i--;
 			j--;
 		}
