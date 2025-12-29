@@ -53,6 +53,9 @@ public class PathSum {
 		return hasPathSumDFS(root.left, targetSum) || hasPathSumDFS(root.right, targetSum);
 	}
 
+	// Iterative approach using BFS
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(w), where w is the maximum width of the tree (due to the queues).
 	private static boolean hasPathSumBFS(TreeNode root, int targetSum) {
 		if (root == null)
 			return false;
