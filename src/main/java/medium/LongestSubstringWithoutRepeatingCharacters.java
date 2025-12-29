@@ -5,9 +5,9 @@ import java.util.Set;
 
 /**
  * Leetcode Problem 3: Longest Substring Without Repeating Characters
- * Topics: Hash Table, String, Sliding Window
  * Time Complexity: O(n) - where n is the length of the input string.
  * Space Complexity: O(min(m, n)) - where m is the size of the character set and n is the length of the input string.
+ * Topics: Hash Table, String, Sliding Window
  * Given a string s, find the length of the longest substring without repeating characters.
  *
  * Example 1:
