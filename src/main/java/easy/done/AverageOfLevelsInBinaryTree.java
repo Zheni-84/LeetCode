@@ -32,6 +32,9 @@ public class AverageOfLevelsInBinaryTree {
 		System.out.println(averages); // Output: [3.0, 14.5, 11.0]
 	}
 
+	// BFS approach
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(w), where w is the maximum width of the tree (for the queue).
 	public List<Double> averageOfLevels(TreeNode root) {
 		List<Double> result = new ArrayList<>();
 		if (root == null)
