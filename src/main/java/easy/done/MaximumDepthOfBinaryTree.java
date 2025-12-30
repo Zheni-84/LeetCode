@@ -36,6 +36,9 @@ public class MaximumDepthOfBinaryTree {
 		return 1 + Math.max(maxDepthDFSBrute(root.left), maxDepthDFSBrute(root.right));
 	}
 
+	// Iterative approach using BFS
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(w), where w is the maximum width of the tree (due to the queue).
 	private static int maxDepthBFS(TreeNode root) {
 		if (root == null)
 			return 0;
