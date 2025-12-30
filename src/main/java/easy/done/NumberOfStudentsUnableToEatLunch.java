@@ -93,6 +93,9 @@ public class NumberOfStudentsUnableToEatLunch {
 		return queue.size();
 	}
 
+	// optimal solution using counting
+	// Time Complexity: O(n) where n is the number of students
+	// Space Complexity: O(1)
 	private static int countStudentsCounters(int[] students, int[] sandwiches) {
 		int count0 = 0, count1 = 0;
 		for (int s : students) {
