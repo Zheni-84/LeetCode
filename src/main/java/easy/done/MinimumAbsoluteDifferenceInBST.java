@@ -1,7 +1,6 @@
 package easy.done;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 /**
  * LeetCode Problem 530: Minimum Absolute Difference in BST
@@ -20,15 +19,50 @@ public class MinimumAbsoluteDifferenceInBST {
 	static Integer prev = null; // Use Integer to allow null value
 
 	public static void main(String[] args) {
-		TreeNode root = new TreeNode(5);
+		TreeNode root = new TreeNode(4);
 		root.left = new TreeNode(2);
-		root.right = new TreeNode(8);
-		root.left.left = new TreeNode(0);
-		root.left.right = new TreeNode(4);
+		root.right = new TreeNode(6);
+		root.left.left = new TreeNode(1);
+		root.left.right = new TreeNode(3);
 
-		int minDiff = getMinimumDifference(root);
-		System.out.println("Minimum absolute difference in BST: " + minDiff); // Output: 2
-		// Example: For the BST [0, 2, 4, 5, 8], the minimum absolute difference is 2 (between 2 and 4).
+		System.out.println("Minimum Absolute Difference in BST (Iterative In-Order): " + getMinimumDifference(root)); // Output: 1
+
+		// Reset static variables for next method
+		min = Integer.MAX_VALUE;
+		prev = null;
+
+		System.out.println("Minimum Absolute Difference in BST (Recursive In-Order): " + minDiffInBST(root)); // Output: 1
+
+		// Reset static variables for next method
+		min = Integer.MAX_VALUE;
+		prev = null;
+
+		System.out.println("Minimum Absolute Difference in BST (BFS): " + getMinimumDifferenceBFS(root)); // Output: 1
+	}
+
+
+	// BFS approach
+	// Time Complexity: O(n log n) (due to sorting)
+	// Space Complexity: O(n), for storing node values.
+	private static int getMinimumDifferenceBFS(TreeNode root) {
+		List<Integer> values = new ArrayList<>();
+		Queue<TreeNode> q = new LinkedList<>();
+		q.offer(root);
+
+		while (!q.isEmpty()) {
+			TreeNode node = q.poll();
+			values.add(node.val);
+			if (node.left != null) q.offer(node.left);
+			if (node.right != null) q.offer(node.right);
+		}
+
+		Collections.sort(values);
+		int minDiff = Integer.MAX_VALUE;
+		for (int i = 1; i < values.size(); i++) {
+			minDiff = Math.min(minDiff, values.get(i) - values.get(i - 1));
+		}
+
+		return minDiff;
 	}
 
 	private static int minDiffInBST(TreeNode root) {
