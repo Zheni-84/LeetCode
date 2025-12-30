@@ -34,6 +34,9 @@ public class SymmetricTree {
 		System.out.println("Is the tree symmetric (BFS)? " + isSymmetricBFS(asymmetricRoot)); // Output: false
 	}
 
+	// Recursive approach by DFS
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(h), where h is the height of the tree (due to recursion stack).
 	private static boolean isSymmetric(TreeNode root) {
 		return isMirrorRecursive(root.left, root.right);
 	}
@@ -57,6 +60,9 @@ public class SymmetricTree {
 				&& isMirrorRecursive(t1.right, t2.left);
 	}
 
+	// Iterative approach by BFS
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(w), where w is the maximum width of the tree (due to the queue).
 	private static boolean isSymmetricBFS(TreeNode root) {
 		if (root == null) return true;
 
@@ -85,9 +91,6 @@ public class SymmetricTree {
 		int val;
 		TreeNode left;
 		TreeNode right;
-
-		TreeNode() {
-		}
 
 		TreeNode(int val) {
 			this.val = val;
