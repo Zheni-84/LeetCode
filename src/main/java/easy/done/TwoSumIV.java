@@ -1,9 +1,6 @@
 package easy.done;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 /**
  * LeetCode Problem 653: Two Sum IV - Input is a BST
@@ -29,16 +26,39 @@ public class TwoSumIV {
 
 		int k = 9;
 
-		TwoSumIV solution = new TwoSumIV();
-		boolean result = solution.findTarget(root, k);
+		boolean result = findTargetDFSBinarySearch(root, k);
 		System.out.println("Exist two elements in the BST such that their sum is equal to " + k + "? " + result); // Output: true
 
 		// Using optimized approach with two controlled BST iterators
-		boolean resultIterators = solution.findTargetIterators(root, k);
+		boolean resultIterators = findTargetIterators(root, k);
 		System.out.println("Exist two elements in the BST such that their sum is equal to " + k + "? " + resultIterators); // Output: true
 	}
 
-	public boolean findTarget(TreeNode root, int k) {
+	// BFS approach using a queue and a set to track seen values
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(n), for storing seen values and the queue.
+	private static boolean findTargetBFS(TreeNode root, int k) {
+		if (root == null) return false;
+
+		Set<Integer> seen = new HashSet<>();
+		Queue<TreeNode> queue = new LinkedList<>();
+		queue.offer(root);
+
+		while (!queue.isEmpty()) {
+			TreeNode node = queue.poll();
+			if (seen.contains(k - node.val)) return true;
+			seen.add(node.val);
+			if (node.left != null) queue.offer(node.left);
+			if (node.right != null) queue.offer(node.right);
+		}
+
+		return false;
+	}
+
+	// Basic approach using in-order traversal and two-pointer technique for binary search
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(n), for storing the values of the nodes.
+	private static boolean findTargetDFSBinarySearch(TreeNode root, int k) {
 		List<Integer> values = new ArrayList<>();
 		// Perform in-order traversal to get sorted values
 		inorder(root, values);
@@ -46,6 +66,7 @@ public class TwoSumIV {
 		int left = 0;
 		int right = values.size() - 1;
 		// Use two-pointer technique to find if there are two numbers that sum to k
+		//Binary Search
 		while (left < right) {
 			int sum = values.get(left) + values.get(right);
 			if (sum == k)
@@ -64,7 +85,7 @@ public class TwoSumIV {
 		return false;
 	}
 
-	private void inorder(TreeNode node, List<Integer> values) {
+	private static void inorder(TreeNode node, List<Integer> values) {
 		if (node == null)
 			return;
 
@@ -76,7 +97,7 @@ public class TwoSumIV {
 	// Optimized approach using two controlled BST iterators
 	// Time Complexity: O(n)
 	// Space Complexity: O(h), where h is the height of the tree (for the stacks)
-	public boolean findTargetIterators(TreeNode root, int k) {
+	private static boolean findTargetIterators(TreeNode root, int k) {
 		if (root == null)
 			return false;
 
