@@ -16,6 +16,10 @@ package easy.done;
  * 	if t2 is less than or equal to t1 + duration,
  * 	the poison duration is extended to t2 + duration.
  *
+ * Hint:
+ * 1. Iterate through the time series and calculate the poisoned duration for each attack.
+ * 2. If the next attack occurs before the current poison duration ends, extend the poison duration.
+ * 3. Sum up the total poisoned duration.
  * Link: https://leetcode.com/problems/teemo-attacking/
  */
 public class TeemoAttacking {
@@ -35,6 +39,9 @@ public class TeemoAttacking {
 		System.out.println("Total poisoned duration: " + poisonedDuration);
 	}
 
+	// Function to find the total poisoned duration
+	// Time Complexity: O(n)
+	// Space Complexity: O(1)
 	public static int findPoisonedDuration(int[] timeSeries, int duration) {
 		int total = 0;
 		int start = timeSeries[0];
