@@ -3,6 +3,7 @@ package easy.done;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * LeetCode Problem 1122 - Relative Sort Array
@@ -58,7 +59,7 @@ public class RelativeSortArray {
 	// Time Complexity: O(n log n) due to sorting
 	// Space Complexity: O(n) for the boxed array
 	private static int[] relativeSortArrayMap2(int[] arr1, int[] arr2) {
-		Map<Integer, Integer> arr2Idx = new HashMap<>();
+		Map<Integer, Integer> arr2Idx = new TreeMap<>();
 		for (int i = 0; i < arr2.length; i++) {
 			arr2Idx.put(arr2[i], i);
 		}
