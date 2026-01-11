@@ -23,10 +23,48 @@ public class SumOfLeftLeaves {
 		root.right.left = new TreeNode(15);
 		root.right.right = new TreeNode(7);
 
-		int sum = sumOfLeftLeaves(root);
-		System.out.println("Sum of left leaves: " + sum); // Output: 24
+		int sum = sumOfLeftLeavesDFS(root);
+		System.out.println("Sum of Left Leaves (DFS): " + sum); // Output: 24 (9 + 15)
+
+		int sumBFS = sumOfLeftLeavesBFS(root);
+		System.out.println("Sum of Left Leaves (BFS): " + sumBFS); // Output: 24 (9 + 15)
 	}
-	private static int sumOfLeftLeaves(TreeNode root) {
+
+	// Iterative approach using BFS with a queue
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(w), where w is the maximum width of the tree (for the queue).
+	private static int sumOfLeftLeavesBFS(TreeNode root) {
+		if (root == null) return 0;
+
+		Deque<TreeNode> queue = new ArrayDeque<>();
+		queue.offer(root);
+		int sum = 0;
+
+		while(!queue.isEmpty()){
+			TreeNode node = queue.poll();
+			// Check if the left child is a leaf node
+			if(node.left != null){
+				// If the left child is a leaf node, add its value to the sum
+				if(node.left.left == null && node.left.right == null){
+					sum += node.left.val;
+				} else {
+					// Otherwise, add it to the queue for further processing
+					queue.offer(node.left);
+				}
+			}
+			// Add right child to queue if it exists
+			if(node.right != null){
+				queue.offer(node.right);
+			}
+		}
+
+		return sum;
+	}
+
+	// Iterative approach using DFS with a stack
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(h), where h is the height of the tree (for the stack).
+	private static int sumOfLeftLeavesDFS(TreeNode root) {
 		if(root == null) return 0;
 
 		Deque<TreeNode> stack = new ArrayDeque<>();
