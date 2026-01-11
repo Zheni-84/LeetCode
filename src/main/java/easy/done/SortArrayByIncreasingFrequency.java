@@ -76,8 +76,8 @@ public class SortArrayByIncreasingFrequency {
 		List<Integer> list = new ArrayList<>();
 		for (int n : nums) list.add(n);
 
-		// Step 3: Sort using custom comparator
-		Collections.sort(list, (a, b) -> {
+		// Step 3: Sort using a custom comparator
+		list.sort((a, b) -> {
 			int fa = freq.get(a);
 			int fb = freq.get(b);
 			if (fa != fb) {
@@ -92,6 +92,34 @@ public class SortArrayByIncreasingFrequency {
 		for (int i = 0; i < nums.length; i++) {
 			result[i] = list.get(i);
 		}
+		return result;
+	}
+
+	public int[] frequencySort(int[] nums) {
+		Map<Integer, Integer> freq = new HashMap<>();
+		for (int n : nums) {
+			freq.put(n, freq.getOrDefault(n, 0) + 1);
+		}
+
+		List<Integer> list = new ArrayList<>();
+		for (int n : nums) list.add(n);
+
+		list.sort((a, b) -> {
+			int freq1 = freq.get(a);
+			int freq2 = freq.get(b);
+
+			if(freq1 != freq2){
+				return freq1 - freq2; // increasing frequency
+			}
+
+			return b - a; // decreasing value
+		});
+
+		int[] result = new int[list.size()];
+		for(int i = 0; i < list.size(); i++){
+			result[i] = list.get(i);
+		}
+
 		return result;
 	}
 }
