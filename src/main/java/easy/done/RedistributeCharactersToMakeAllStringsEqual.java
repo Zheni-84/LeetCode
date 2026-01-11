@@ -9,17 +9,17 @@ import java.util.stream.Collectors;
  * Time Complexity: O(n * m), where n is the number of words and m is the average length of the words.
  * Space Complexity: O(1), since the frequency map will have at most 26 entries (for each lowercase English letter).
  * Topics: String, Hash Table, Math
- *
+ * <p>
  * You are given an array of strings words (0-indexed).
  * In one operation, pick two distinct indices i and j, and move a character from words[i] to any position in words[j].
  * Return true if you can make every string in words equal using any number of operations, and false otherwise.
- *
+ * <p>
  * Example:
  * Input: words = ["abc","aabc","bc"]
  * Output: true
  * Explanation: Move the first 'a' in words[1] to the front of words[2],
  * then all the strings are equal to "abc".
- *
+ * <p>
  * Hint: Count the frequency of each character across all strings. Each character's total count must be divisible by the number of strings.
  * https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/
  */
@@ -33,6 +33,30 @@ public class RedistributeCharactersToMakeAllStringsEqual {
 		System.out.println("Can words2 be made equal? " + makeEqual(words2)); // false
 	}
 
+	// Use Hash Table
+	private static boolean makeEqualHashTable(String[] words) {
+		int n = words.length;
+		Map<Character, Integer> charCount = new java.util.HashMap<>();
+
+		// Count the frequency of each character across all words
+		for (String word : words) {
+			for (char c : word.toCharArray()) {
+				charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+			}
+		}
+
+		// Check if each character's total count is divisible by the number of words
+		for (int count : charCount.values()) {
+			if (count % n != 0) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	// Time Complexity: O(n * m), where n is the number of words and m is the average length of the words.
+	// Space Complexity: O(1), since the frequency map will have at most 26 entries (for each lowercase English letter).
 	private static boolean makeEqual(String[] words) {
 		int n = words.length;
 
