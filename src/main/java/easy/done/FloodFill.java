@@ -1,6 +1,7 @@
 package easy.done;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * LeetCode 733: Flood Fill
@@ -67,7 +68,32 @@ public class FloodFill {
 		dfs(image, r, c - 1, originalColor, newColor);
 	}
 
-	private static int[][] floodFillBFS(int[][] image, int sr, int sc, int color) {
+	public int[][] floodFillBFS1(int[][] image, int sr, int sc, int color) {
+		int original = image[sr][sc];
+		if(original == color) return image;
+
+		int m = image.length;
+		int n = image[0].length;
+		Queue<int[]> que = new LinkedList<>();
+		que.offer(new int[]{sr, sc});
+		while(!que.isEmpty()){
+			int[] cell = que.poll();
+			int r = cell[0];
+			int c = cell[1];
+			if(r < 0 || r >= m || c < 0 || c >= n || image[r][c] != original) continue;
+
+			image[r][c] = color;
+
+			que.offer(new int[]{r - 1, c});
+			que.offer(new int[]{r + 1, c});
+			que.offer(new int[]{r, c - 1});
+			que.offer(new int[]{r, c + 1});
+		}
+
+		return image;
+	}
+
+	private static int[][] floodFillBFS2(int[][] image, int sr, int sc, int color) {
 		int originalColor = image[sr][sc];
 		if (originalColor == color) {
 			return image;
