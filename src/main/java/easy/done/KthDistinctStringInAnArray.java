@@ -30,19 +30,42 @@ public class KthDistinctStringInAnArray {
 	public static void main(String[] args) {
 		String[] arr1 = { "d", "b", "c", "b", "c", "a" };
 		int k1 = 2;
-		System.out.println("Kth distinct string: " + kthDistinct(arr1, k1)); // Output: "a"
+		System.out.println("Kth distinct string: " + kthDistinctStreams(arr1, k1)); // Output: "a"
 
 		String[] arr2 = { "aaa", "aa", "a" };
 		int k2 = 1;
-		System.out.println("Kth distinct string: " + kthDistinct(arr2, k2)); // Output: "aaa"
+		System.out.println("Kth distinct string: " + kthDistinctStreams(arr2, k2)); // Output: "aaa"
 
 		String[] arr3 = { "a", "b", "a" };
 		int k3 = 3;
-		System.out.println("Kth distinct string: " + kthDistinct(arr3, k3)); // Output: ""
+		System.out.println("Kth distinct string: " + kthDistinctStreams(arr3, k3)); // Output: ""
 
 	}
 
-	private static String kthDistinct(String[] arr, int k) {
+	// Use iterative and Hash Table
+	private static String kthDistinctMap(String[] arr, int k) {
+		Map<String, Integer> freqMap = new LinkedHashMap<>();
+
+		// Count frequency of each string
+		for (String str : arr) {
+			freqMap.put(str, freqMap.getOrDefault(str, 0) + 1);
+		}
+
+		// Find the kth distinct string
+		int count = 0;
+		for (Map.Entry<String, Integer> entry : freqMap.entrySet()) {
+			if (entry.getValue() == 1) {
+				count++;
+				if (count == k) {
+					return entry.getKey();
+				}
+			}
+		}
+
+		return "";
+	}
+
+	private static String kthDistinctStreams(String[] arr, int k) {
 		Map<String, Long> freq = Arrays.stream(arr)
 				.collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting()));
 
