@@ -72,6 +72,7 @@ public class IslandPerimeter {
 				}
 			}
 		}
+
 		return perimeter;
 	}
 
