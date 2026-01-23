@@ -34,7 +34,7 @@ import java.util.Set;
  */
 public class LongestSubstringWithoutRepeatingCharacters {
 	public static void main(String[] args) {
-		String s = "abcabcbb";
+		String s = "abcbdaac";
 		// Output: 3
 		// Explanation: The answer is "abc", with the length of 3.
 		System.out.println("Longest Substring Without Repeating Characters: " + lengthOfLongestSubstring(s));
