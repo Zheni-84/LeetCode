@@ -24,15 +24,47 @@ public class MinimumDepthOfBinaryTree {
 		root.left.left = new TreeNode(4);
 		root.left.right = new TreeNode(5);
 
-		int depth = minDepth(root);
-		System.out.println("Minimum Depth of Binary Tree: " + depth); // Output: 2
+		int depthBFS = minDepthRecursionBFS(root);
+		System.out.println("Minimum Depth of Binary Tree (BFS): " + depthBFS); // Output: 2
 
-		int depthRecursion = minDepthRecursion(root);
-		System.out.println("Minimum Depth of Binary Tree (Recursion): " + depthRecursion); // Output: 2
+		int depthDFS = minDepthDFS(root);
+		System.out.println("Minimum Depth of Binary Tree (DFS): " + depthDFS); // Output: 2
+	}
+
+	// BFS approach
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(w), where w is the maximum width of the tree (due to the queue).
+	private static int minDepthRecursionBFS(TreeNode root) {
+		if (root == null)
+			return 0;
+		Queue<TreeNode> queue = new LinkedList<>();
+		queue.offer(root);
+		int depth = 1;
+
+		while (!queue.isEmpty()) {
+			int size = queue.size();
+			for (int i = 0; i < size; i++) {
+				TreeNode node = queue.poll();
+				//found the first leaf
+				if (node.left == null && node.right == null)
+					return depth;
+
+				if (node.left != null)
+					queue.offer(node.left);
+				if (node.right != null)
+					queue.offer(node.right);
+			}
+			depth++;
+		}
+
+		return depth;
 
 	}
 
-	private static int minDepthRecursion(TreeNode root) {
+	// DFS approach
+	// Time Complexity: O(n), where n is the number of nodes in the tree.
+	// Space Complexity: O(h), where h is the height of the tree (due to recursion stack).
+	private static int minDepthDFS(TreeNode root) {
 		if (root == null) return 0;
 
 		if (root.left == null) return 1 + minDepth(root.right);
