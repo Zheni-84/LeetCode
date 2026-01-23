@@ -28,7 +28,7 @@ public class MostCommonWord {
 
 	private static String mostCommonWord(String paragraph, String[] banned) {
 		// Step 1: Normalize the paragraph
-		paragraph = paragraph.toLowerCase().replaceAll("[^a-zA-Z ]", "");
+		paragraph = paragraph.toLowerCase().replaceAll("[^a-z ]", "");
 
 		// Step 2: Split into words
 		String[] words = paragraph.split("\\s+");
