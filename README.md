@@ -203,10 +203,12 @@ This repository contains my solutions to LeetCode problems in Java.
 |  134 |                  Gas Station                   |     Greedy, Array, Prefix Sum      |                 [Java Code](src/main/java/medium/GasStation.java)                 |
 |  150 |        Evaluate Reverse Polish Notation        |            Stack, Array            |       [Java Code](src/main/java/medium/EvaluateReversePolishNotation.java)        |
 |  274 |              H-Index Citations II              |        Array, Counting Sort        |              [Java Code](src/main/java/medium/HIndexCitations.java)               |
+|  513 |           Find Bottom Left Tree Value          |         Tree, DFS, BFS             |          [Java Code](src/main/java/medium/FindBottomLeftTreeValue.java)           |
 |  287 |           Find the Duplicate Number            | Array, Two Pointers, Binary Search |               [Java Code](src/main/java/medium/FindDuplicate.java)                |
 |  384 |                Shuffle an Array                |      Array, Math, Randomized       |               [Java Code](src/main/java/medium/ShuffleAnArray.java)               |
 |  452 |   Minimum Number of Arrows to Burst Balloons   |          Greedy, Sorting           |     [Java Code](src/main/java/medium/MinimumNumberArrowsToBurstBalloons.java)     |
 |  849 |      Maximize Distance to Closest Person       |        Array, Two Pointers         |      [Java Code](src/main/java/medium/MaximizeDistanceToClosestPerson.java)       |
+|  994 |                Rotting Oranges                 |          Array, BFS, Matrix        |               [Java Code](src/main/java/medium/RottingOranges.java)               |
 | 1535 |        Find the Winner of an Array Game        |         Array, Simulation          |         [Java Code](src/main/java/medium/FindTheWinnerOfAnArrayGame.java)         |
 
 ---
