@@ -41,6 +41,7 @@ public class NextGreaterElement1 {
 		System.out.print(Arrays.toString(result));
 	}
 
+	// Use Monotonic Stack
 	static int[] nextGreaterElement(int[] nums1, int[] nums2) {
 		//Create a map to hold the next greater values for numbers in num2
 		Map<Integer, Integer> nextGreater = new HashMap<>();
@@ -68,6 +69,28 @@ public class NextGreaterElement1 {
 		for (int i = 0; i < nums1.length; i++) {
 			//Get the next greater element for each number in nums1
 			result[i] = nextGreater.get(nums1[i]);
+		}
+
+		return result;
+	}
+
+	// Use Array
+	static int[] nextGreaterElementArray(int[] nums1, int[] nums2) {
+		int n = nums2.length;
+		int[] nextGreater = new int[10001]; // Assuming the range of numbers is 0 to 10000
+		Arrays.fill(nextGreater, -1);
+		Deque<Integer> stack = new ArrayDeque<>();
+
+		for (int num : nums2) {
+			while (!stack.isEmpty() && num > stack.peek()) {
+				nextGreater[stack.pop()] = num;
+			}
+			stack.push(num);
+		}
+
+		int[] result = new int[nums1.length];
+		for (int i = 0; i < nums1.length; i++) {
+			result[i] = nextGreater[nums1[i]];
 		}
 
 		return result;
