@@ -33,6 +33,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |   66 |                           Plus one                           |                    Array, Math                     |                     [Java Code](src/main/java/easy/done/PlusOne.java)                     |
 |   67 |                      Add Binary Strings                      |           String, Math, Bit Manipulation           |                [Java Code](src/main/java/easy/done/AddBinaryStrings.java)                 |
 |   69 |                           Sqrt(x)                            |                Math, Binary Search                 |                      [Java Code](src/main/java/easy/done/SqrtX.java)                      |
+|   70 |                       Climbing Stairs                        |           Dynamic Programming, Recursion           |                 [Java Code](src/main/java/easy/done/ClimbingStairs.java)                  |
 |   94 |                Binary Tree Inorder Traversal                 |       Tree, Depth-First Search, Binary Tree        |           [Java Code](src/main/java/easy/done/BinaryTreeInorderTraversal.java)            |
 |  103 |           Binary Tree Zigzag Level Order Traversal           |                     Tree, BFS                      |                [Java Code](src/main/java/easy/done/ZigzagLevelOrder.java)                 |
 |  144 |                Binary Tree Preorder Traversal                |               Tree, DFS, Binary Tree               |           [Java Code](src/main/java/easy/done/BinaryTreePreorderTraversal.java)           |
@@ -57,6 +58,7 @@ This repository contains my solutions to LeetCode problems in Java.
 |  257 |                      Binary Tree Paths                       |            Binary Tree, DFS, Tree Paths            |                 [Java Code](src/main/java/easy/done/BinaryTreePaths.java)                 |
 |  268 |                        Missing Number                        |     Array, Hash Table, Sorting, Binary Search      |                  [Java Code](src/main/java/easy/done/MissingNumber.java)                  |
 |  290 |                         Word Pattern                         |                 String, Hash Table                 |                   [Java Code](src/main/java/easy/done/WordPattern.java)                   |
+|  367 |                     Valid Perfect Square                     |                Math, Binary Search                 |               [Java Code](src/main/java/easy/done/ValidPerfectSquare.java)                |
 |  383 |                         Ransom Note                          |                 String, Hash Table                 |                   [Java Code](src/main/java/easy/done/RansomNote.java)                    |
 |  387 |              First Unique Character in a String              |           Index array, String, Counting            |          [Java Code](src/main/java/easy/done/FirstUniqueCharacterInString.java)           |
 |  392 |                        Is Subsequence                        |                Two Pointers, String                |                  [Java Code](src/main/java/easy/done/IsSubsequence.java)                  |
@@ -107,15 +109,16 @@ This repository contains my solutions to LeetCode problems in Java.
 |  872 |                      Leaf Similar Trees                      |     Tree, Depth-First Search, Stack, Recursion     |                [Java Code](src/main/java/easy/done/LeafSimilarTrees.java)                 |
 |  883 |                 Projection Area of 3D Shapes                 |                   Array, Matrix                    |             [Java Code](src/main/java/easy/done/ProjectionArea3DShapes.java)              |
 |  884 |              Uncommon Words from Two Sentences               |            HashMap, String Manipulation            |          [Java Code](src/main/java/easy/done/UncommonWordsFromTwoSentences.java)          |
-|  917 |                     Reverse Only Letters                     |                String, Two Pointers                |               [Java Code](src/main/java/easy/done/ReverseOnlyLetters.java)                |
+|  914 |             X of a Kind in a Deck of Cards                   |       Array, Hash Table, Math, Number Theory       |              [Java Code](src/main/java/easy/done/XOfAKindInDeckOfCards.java)              |
 |  938 |                       Range Sum of BST                       |    Tree, Depth-First Search, Binary Search Tree    |                  [Java Code](src/main/java/easy/done/RangeSumOfBST.java)                  |
 |  941 |                     Valid Mountain Array                     |                Array, Two Pointers                 |               [Java Code](src/main/java/easy/done/ValidMountainArray.java)                |
 |  942 |                       DI String Match                        |                   Array, Greedy                    |                  [Java Code](src/main/java/easy/done/DIStringMatch.java)                  |
 |  953 |                Verifying an Alien Dictionary                 |                Array, HashMap Table                |            [Java Code](src/main/java/easy/done/VerifyingAlienDictionary.java)             |
+|  961 |           N-Repeated Element in Size 2N Array                |                 Array, Hash Table                  |          [Java Code](src/main/java/easy/done/NRepeatedElementInSize2NArray.java)          |
 |  965 |                    Univalued Binary Tree                     |                      BST, BFS                      |               [Java Code](src/main/java/easy/done/UniValuedBinaryTree.java)               |
 |  976 |                  Largest Perimeter Triangle                  |                   Array, Sorting                   |            [Java Code](src/main/java/easy/done/LargestPerimeterTriangle.java)             |
 |  993 |                    Cousins in Binary Tree                    |                      BST, BFS                      |               [Java Code](src/main/java/easy/done/CousinsInBinaryTree.java)               |
-| 1002 |                    Find Common Characters                    |                Array, HashMap Table                |              [Java Code](src/main/java/easy/done/FindCommonCharacters.java)               |
+|  997 |                     Find the Town Judge                      |                   Array, Graph                     |                [Java Code](src/main/java/easy/done/FindTheTownJudge.java)                 |
 | 1022 |              Sum of Root To Leaf Binary Numbers              |                      BST, DFS                      |          [Java Code](src/main/java/easy/done/SumOfRootToLeafBinaryNumbers.java)           |
 | 1046 |                      Last Stone Weight                       |                Array, Heap, Greedy                 |                 [Java Code](src/main/java/easy/done/LastStoneWeight.java)                 |
 | 1050 |                        Height Checker                        |                   Array, Sorting                   |                  [Java Code](src/main/java/easy/done/HeightChecker.java)                  |
@@ -129,6 +132,7 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1385 |          Find the Distance Value Between Two Arrays          |           Array, Binary Search, Sorting            |      [Java Code](src/main/java/easy/done/FindTheDistanceValueBetweenTwoArrays.java)       |
 | 1413 |        Minimum Value to Get Positive Step by Step Sum        |                 Array, Prefix Sum                  |          [Java Code](src/main/java/easy/done/MinimumValueToPositiveStepSum.java)          |
 | 1422 |            Maximum Score After Splitting a String            |                 String, Prefix Sum                 |        [Java Code](src/main/java/easy/done/MaximumScoreAfterSplittingString.java)         |
+| 1427 |                   Perform String Shifts                      |              String, Array, Prefix Sum             |                   [Java Code](src/main/java/easy/done/StringShift.java)                   |
 | 1436 |                       Destination City                       |                 Hash Table, String                 |                 [Java Code](src/main/java/easy/done/DestinationCity.java)                 |
 | 1446 |                    Consecutive Characters                    |                       String                       |              [Java Code](src/main/java/easy/done/ConsecutiveCharacters.java)              |
 | 1464 |         Maximum Product of Two Elements in an Array          |                Array, Sorting, Heap                |       [Java Code](src/main/java/easy/done/MaximumProductOfTwoElementsInArray.java)        |
@@ -138,18 +142,22 @@ This repository contains my solutions to LeetCode problems in Java.
 | 1572 |                     Matrix Diagonal Sum                      |                Array, Matrix, Math                 |                [Java Code](src/main/java/easy/done/MatrixDiagonalSum.java)                |
 | 1582 |             Special Positions in a Binary Matrix             |                   Array, Matrix                    |         [Java Code](src/main/java/easy/done/SpecialPositionsInBinaryMatrix.java)          |
 | 1588 |               Sum of All Odd Length Subarrays                |                 Array, Prefix Sum                  |            [Java Code](src/main/java/easy/done/SumAllOddLengthSubarrays.java)             |
+| 1598 |                      Crawler Log Folder                      |                 Stack, Simulation                  |                [Java Code](src/main/java/easy/done/CrawlerLogFolder.java)                 |
 | 1614 |           Maximum Nesting Depth of the Parentheses           |                       String                       |        [Java Code](src/main/java/easy/done/MaximumNestingDepthOfParentheses.java)         |
+| 1624 |       Largest Substring Between Two Equal Characters         |              String, Hash Table, Array             |    [Java Code](src/main/java/easy/done/LargestSubstringBetweenTwoEqualCharacters.java)    |
 | 1629 |                         Slowest Key                          |                   String, Array                    |                   [Java Code](src/main/java/easy/done/SlowestKey.java)                    |
 | 1634 |                      Buy Two Chocolates                      |                   Array, Sorting                   |                [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)                 |
 | 1636 |              Sort Array by Increasing Frequency              |             Array, Hash Table, Sorting             |         [Java Code](src/main/java/easy/done/SortArrayByIncreasingFrequency.java)          |
 | 1652 |                       Defuse the Bomb                        |                       Array                        |                  [Java Code](src/main/java/easy/done/DefuseTheBomb.java)                  |
-| 1662 |          Check If Two String Arrays are Equivalent           |                String, Two Pointers                |         [Java Code](src/main/java/easy/CheckIfTwoStringArraysAreEquivalent.java)          |
+| 1662 |          Check If Two String Arrays are Equivalent           |                String, Two Pointers                |       [Java Code](src/main/java/easy/done/CheckIfTwoStringArraysAreEquivalent.java)       |
+| 1668 |          Check If Two Strings are Almost Equivalent          |                 String, Hash Table                 |    [Java Code](src/main/java/easy/done/CheckWhetherTwoStringsAreAlmostEquivalent.java)    |
 | 1700 |            Number of Students Unable to Eat Lunch            |                 Queue, Simulation                  |        [Java Code](src/main/java/easy/done/NumberOfStudentsUnableToEatLunch.java)         |
 | 1732 |                  Find the Highest Altitude                   |                 Array, Prefix Sum                  |               [Java Code](src/main/java/easy/done/FindHighestAltitude.java)               |
 | 1758 |      Minimum Changes To Make Alternating Binary String       |                   String, Greedy                   |   [Java Code](src/main/java/easy/done/MinimumChangesToMakeAlternatingBinaryString.java)   |
 | 1763 |                    Longest Nice Substring                    |                String, Brute Force                 |              [Java Code](src/main/java/easy/done/LongestNiceSubstring.java)               |
-| 1768 |                  Merge Strings Alternately                   |                   Array, Sorting                   |                [Java Code](src/main/java/easy/done/BuyTwoChocolates.java)                 |
+| 1768 |                  Merge Strings Alternately                   |                       String                       |             [Java Code](src/main/java/easy/done/MergeStringsAlternately.java)             |
 | 1773 |                 Count Items Matching a Rule                  |                   Array, String                    |             [Java Code](src/main/java/easy/done/CountItemsMatchingRule.java)              |
+| 1791 |                 Find Center of Star Graph                    |                       Graph                        |              [Java Code](src/main/java/easy/done/FindCenterOfStarGraph.java)              |
 | 1876 |      Substrings of Size Three with Distinct Characters       |          String, Sliding Window, Hash Set          |      [Java Code](src/main/java/easy/done/SubstringsSizeThreeDistinctCharacters.java)      |
 | 1897 |      Redistribute Characters to Make All Strings Equal       |              String, Hash Table, Math              |   [Java Code](src/main/java/easy/done/RedistributeCharactersToMakeAllStringsEqual.java)   |
 | 1903 |                 Largest Odd Number in String                 |                       String                       |            [Java Code](src/main/java/easy/done/LargestOddNumberInString.java)             |
@@ -180,18 +188,26 @@ This repository contains my solutions to LeetCode problems in Java.
 | 2441 |    Largest Positive Integer That Exists With Its Negative    |                  Array, Hash Set                   | [Java Code](src/main/java/easy/done/LargestPositiveIntegerThatExistsWithItsNegative.java) |
 | 2540 |                     Minimum Common Value                     |      Array, Hash Table, Two Pointers, Sorting      |               [Java Code](src/main/java/easy/done/MinimumCommonValue.java)                |
 | 3005 |            Count Elements With Maximum Frequency             |            Array, Hash Table, Counting             |        [Java Code](src/main/java/easy/done/CountElementsWithMaximumFrequency.java)        |
-
 ---
 
 ### Medium Problems
 
-|   # |                 Problem Title                  |               Topics               |                                     Solution                                      |
-|----:|:----------------------------------------------:|:----------------------------------:|:---------------------------------------------------------------------------------:|
-|   2 |                Add Two Numbers                 |                                    |               [Java Code](src/main/java/medium/AddTwoNumbers.java)                |
-|   3 | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window | [Java Code](src/main/java/medium/LongestSubstringWithoutRepeatingCharacters.java) |
-| 150 |        Evaluate Reverse Polish Notation        |            Stack, Array            |       [Java Code](src/main/java/medium/EvaluateReversePolishNotation.java)        |
-| 287 |           Find the Duplicate Number            | Array, Two Pointers, Binary Search |               [Java Code](src/main/java/medium/FindDuplicate.java)                |
-| 384 |                Shuffle an Array                |      Array, Math, Randomized       |               [Java Code](src/main/java/medium/ShuffleAnArray.java)               |
+|    # |                 Problem Title                  |               Topics               |                                     Solution                                      |
+|-----:|:----------------------------------------------:|:----------------------------------:|:---------------------------------------------------------------------------------:|
+|    2 |                Add Two Numbers                 |                                    |               [Java Code](src/main/java/medium/AddTwoNumbers.java)                |
+|    3 | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window | [Java Code](src/main/java/medium/LongestSubstringWithoutRepeatingCharacters.java) |
+|   12 |                Integer to Roman                |            Math, String            |               [Java Code](src/main/java/medium/IntegerToRoman.java)               |
+|   72 |                 Edit Distance                  |     String, Dynamic Programming    |                [Java Code](src/main/java/medium/EditDistance.java)                |
+|   79 |                  Word Search                   |     Backtracking, DFS, Matrix      |                 [Java Code](src/main/java/medium/WordSearch.java)                 |
+|  131 |            Palindrome Partitioning             |     Backtracking, DFS, String      |           [Java Code](src/main/java/medium/PalindromePartitioning.java)           |
+|  134 |                  Gas Station                   |     Greedy, Array, Prefix Sum      |                 [Java Code](src/main/java/medium/GasStation.java)                 |
+|  150 |        Evaluate Reverse Polish Notation        |            Stack, Array            |       [Java Code](src/main/java/medium/EvaluateReversePolishNotation.java)        |
+|  274 |              H-Index Citations II              |        Array, Counting Sort        |              [Java Code](src/main/java/medium/HIndexCitations.java)               |
+|  287 |           Find the Duplicate Number            | Array, Two Pointers, Binary Search |               [Java Code](src/main/java/medium/FindDuplicate.java)                |
+|  384 |                Shuffle an Array                |      Array, Math, Randomized       |               [Java Code](src/main/java/medium/ShuffleAnArray.java)               |
+|  452 |   Minimum Number of Arrows to Burst Balloons   |          Greedy, Sorting           |     [Java Code](src/main/java/medium/MinimumNumberArrowsToBurstBalloons.java)     |
+|  849 |      Maximize Distance to Closest Person       |        Array, Two Pointers         |      [Java Code](src/main/java/medium/MaximizeDistanceToClosestPerson.java)       |
+| 1535 |        Find the Winner of an Array Game        |         Array, Simulation          |         [Java Code](src/main/java/medium/FindTheWinnerOfAnArrayGame.java)         |
 
 ---
 
